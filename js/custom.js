@@ -1,94 +1,33 @@
-// #skipNavi
-$('#skipNavi li a').on('focusin', function() {
-  $(this).addClass('on');
+var $gnb_li = $("#gnb > li");
+var $gnb_left = $("#gnb").find(".left");
+var $gnb_sub = $("#gnb").find(".sub");
+
+$gnb_li.on("mouseenter ", function () {
+  $(this).find(".sub").show();
+  $(this).find("a").addClass("on");
 });
 
-$('#skipNavi li a').on('focusout', function() {
-  $(this).removeClass('on');
+$gnb_li.on("mouseleave ", function () {
+  $(this).find(".sub").hide();
+  $(this).find("a").removeClass("on");
+  $(this).find(".left ul").animate({marginLeft: 0}, 500);
+});
+
+$gnb_sub.on("mouseenter", function(){
+  $(this).find(".left ul").animate({marginLeft: "260"}, 700);
 });
 
 
-// #gnb
-var $header = $('#header');
-var $gnb = $('#gnb');
-var $gnb_li = $gnb.children('li');
-var $gnb_li_ul = $gnb_li.children('ul');
-var speed = 500;
+//gnb_li의 갯수만큼 반복을 돌면서 이벤트 연결
+$gnb_li.each(function (index) {
 
-$header.on('mouseleave', closeSub);
-
-// $header.on('mouseenter', openSub);
-
-$gnb_li.on('mouseenter focusin', function(){
-  $(this).children('a').addClass('on');
-  var target = $(this).children("a").attr("data-menu");
-  callData(target);
-  openSub();
-});
-
-$gnb_li.on('mouseleave focusout', function(){
-  $(this).children('a').removeClass('on');
-});
-
-function openSub(){
-  var ht = $header.outerHeight();
-  // var posY = $header.outerHeight();
-  $header.prepend(
-    $('<div class="bgGnb">')
-      .css({
-        width: '100%',
-        height: 300,
-        backgroundColor: '#fafafa', 
-        position: 'absolute',
-        top: ht,
-        left: 0,
-        display: 'none',
-        overflow: 'hidden',
-        zIndex: 2
-      })
-      .append(
-        $("<div class='deco'>")
-            .css({
-                width: 250,
-                height: 170,
-                position: "absolute",
-                left: "50%",
-                top: 20,
-                marginLeft: -590,
-                color: "#000",
-                padding: "70px 0 0",
-                boxSizing: "border-box",
-                textAlign: "center",
-                fontSize: "11px",
-                font: "Lato",
-                letterSpacing: "2px",
-                background: "url(../img/image3.jpeg)",
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "cover",
-                backgroundPosition: "center"
-            })
-    )
-  );
-
-  $('.bgGnb').stop().slideDown(speed);
-  $gnb_li_ul.stop().slideDown(speed); 
-}
-
-function callData(target){
-  $.ajax({
-      url: target
-  })
-  .success(function(data){
-      $(".bgGnb .deco").html(data);
-  })
-  .error(function(err){
-      console.error(err);
-  })
-}
-
-function closeSub(){
-  $('.bgGnb').stop().slideUp(speed, function(){
-    $(this).remove();
+  //gnb_li의 (index)번째 요소에 foucsin이벤트 연결
+  $gnb_li.eq(index).find("a").first().on("focusin", function () {
+    $gnb_li.eq(index).find(".sub").show();
   });
-  $gnb_li_ul.stop().slideUp(speed); 
-}
+
+  //gnb_li의 (index)번째 요소에 focusout이벤트 연결
+  $gnb_li.eq(index).find("a").last().on("focusout", function () {
+    $gnb_li.eq(index).find(".sub").hide();
+  });
+});

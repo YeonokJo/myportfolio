@@ -4,7 +4,9 @@
   .sub-visual {
     background: url(../img/image5.jpeg);
     background-position: center center;
+    background-attachment: fixed;
   }
+  
   #search {
     width: 795px; 
     margin: 0 auto;
@@ -144,7 +146,6 @@
           color: #18278c;
         }
       }
-
     }
 
     #wrap {
@@ -220,3 +221,5 @@
     }
   }
 }
+
+

@@ -71,9 +71,9 @@ $("body").on("click", "article a", function(e){
   $("body").css({overflow: "hidden"})
 });
 
-$("body").on("click", ".pop .close", function(e){
+$("body").on("click", ".pop-youtube .close", function(e){
   e.preventDefault();
-  $(this).parent(".pop").remove();
+  $(this).parent(".pop-youtube").remove();
 
   $("body").css({overflow: "auto"})
 })
@@ -81,7 +81,7 @@ $("body").on("click", ".pop .close", function(e){
 function createPop(opt){
   $("body")
     .append(
-      $('<aside class="pop">')
+      $('<aside class="pop-youtube">')
         .css({
           width: opt.width,
           height: opt.height,
@@ -135,7 +135,7 @@ function createPop(opt){
     )
 
     setTimeout(function(){
-      $(".pop .con").fadeIn(500, function(){
+      $(".pop-youtube .con").fadeIn(500, function(){
         $(this).prev().remove();
       })
     }, 1000)

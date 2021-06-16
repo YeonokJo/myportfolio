@@ -2,10 +2,11 @@
 
 .help {
   .sub-visual {
-    background: url(../img/image7.jpeg);
+    background: url(../img/image8.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
   }
 
   .inner {
@@ -192,29 +193,34 @@
     .subscribe {
       position: relative;
       width: 100%;
+      padding: 50px;
+      box-sizing: border-box;
+      background-image: url(../img/image40.jpeg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      background-attachment: fixed;
 
-      .sub-con {
-        height: 150px;
-        padding: 30px;
-        box-sizing: border-box;
-        background-image: url(../img/image3.jpeg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+      > .inner {
+        width: 1180px;
+        margin: 0 auto;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
 
         input[type=email] {
           width: 380px;
           height: 30px;
+          margin: 0 0 20px;
           border: 1px solid #18278c;
         }
 
         input[type=submit] {
           display: block;
-          position: absolute;
-          bottom: 48px;
-          right: 280px;
-          width: 100px;
+          width: 80px;
           font-family: 'Noto Sans', sans-serif;
           font-size: 12px;
           font-weight: 600;
@@ -228,6 +234,34 @@
           &:hover {
             color: #fff;
             background: #18278c;
+          }
+        }
+      }
+    }
+
+    .support {
+      width: 100%;
+      padding: 100px 0;
+
+      .inner {
+        width: 1180px;
+        margin: 0 auto;
+        padding: 50px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-content: center;
+
+        article {
+         
+
+          span {
+            display: inline-block;
+            margin: 0 10px 50px 0;
+            font-size: 20px;
+            font-weight: 500;
           }
         }
       }
