@@ -305,3 +305,65 @@
     }
   }
 }
+
+// tablet
+@media screen and (max-width: 1179px) {
+  .community {
+
+    .inner {
+
+      width: 100%;
+
+      article {
+        padding: 0 0 110px;
+       
+        .event {
+          
+          width: 30%;
+          
+          .event-title {
+            padding: 10px;
+
+            strong {
+              margin: 0 0 15px;
+              font-size: 14px;
+            }
+  
+            span a {
+              font-size: 14px;
+            }
+          }
+  
+          .event-info {
+            padding: 10px;
+            box-sizing: border-box;
+  
+            .info-tit{
+              display: block;
+              margin: 15px 0 3px 0;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+  
+      
+  
+      table {
+        width: 90%;
+        margin-left: 5%;
+  
+        td {
+          
+          &:nth-child(2) {
+            display: none;
+          }
+  
+          &:nth-child(5) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

@@ -645,6 +645,46 @@ input, a, button {
   color: #000;
 }
 
+@media screen and (max-width: 1179px) {
+  .community .inner {
+    width: 100%;
+  }
+  .community .inner article {
+    padding: 0 0 110px;
+  }
+  .community .inner article .event {
+    width: 30%;
+  }
+  .community .inner article .event .event-title {
+    padding: 10px;
+  }
+  .community .inner article .event .event-title strong {
+    margin: 0 0 15px;
+    font-size: 14px;
+  }
+  .community .inner article .event .event-title span a {
+    font-size: 14px;
+  }
+  .community .inner article .event .event-info {
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .community .inner article .event .event-info .info-tit {
+    display: block;
+    margin: 15px 0 3px 0;
+    font-weight: 600;
+  }
+  .community .inner table {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .community .inner table td:nth-child(2) {
+    display: none;
+  }
+  .community .inner table td:nth-child(5) {
+    display: none;
+  }
+}
 .youtube .sub-visual {
   background: url(../img/image46.jpeg);
   background-repeat: no-repeat;
