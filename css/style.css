@@ -1249,6 +1249,64 @@ input, a, button {
   border: none;
 }
 
+@media screen and (max-width: 1179px) {
+  .department .inner {
+    width: 100%;
+  }
+  .department .inner article .left .box {
+    width: 220px;
+    height: 150px;
+  }
+  .department .inner article .left .box2 {
+    width: 150px;
+    height: 115px;
+    top: 115px;
+    right: 105px;
+  }
+  .department .inner article .right {
+    width: 100%;
+  }
+  .department .inner article .right p {
+    width: 80%;
+  }
+  .department .inner .division {
+    width: 100%;
+    padding: 60px 0;
+  }
+  .department .inner .division .div-tree .depth1 .ceo {
+    width: 150px;
+    height: 50px;
+    border-radius: 0;
+  }
+  .department .inner .division .div-tree .depth1 .ceo::before {
+    display: none;
+  }
+  .department .inner .division .div-tree .depth1 .ceo dl {
+    font-size: 15px;
+    line-height: 50px;
+  }
+  .department .inner .division .div-tree .depth2 {
+    padding: 30px;
+  }
+  .department .inner .division .div-tree .depth2::before {
+    display: none;
+  }
+  .department .inner .division .div-tree .depth2 ul {
+    width: 47%;
+  }
+  .department .inner .division .div-tree .depth2 ul:nth-child(1), .department .inner .division .div-tree .depth2 ul:nth-child(3) {
+    margin-right: 3%;
+  }
+  .department .inner .division .div-tree .depth2 ul:nth-child(2), .department .inner .division .div-tree .depth2 ul:nth-child(4) {
+    margin: 0 3% 90px 0;
+  }
+  .department .inner .division .div-tree .depth2 ul::before {
+    display: none;
+  }
+  .department .inner .division .div-tree .depth2 ul li.manager {
+    border: 1px solid #18278c;
+  }
+}
 .location .sub-visual {
   background: url(../img/image48.jpeg);
   background-repeat: no-repeat;
@@ -1986,6 +2044,25 @@ input, a, button {
   font-size: 14px;
   font-family: "Lato", sans-serif;
   color: #999;
+}
+
+@media screen and (max-width: 1179px) {
+  #header .inner {
+    width: 100%;
+    height: 60px;
+  }
+
+  #header .inner h1 {
+    left: 30px;
+  }
+
+  #header .inner .util {
+    display: none;
+  }
+
+  #header .inner #gnb {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
