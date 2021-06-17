@@ -408,9 +408,10 @@ input, a, button {
 }
 
 .community .sub-visual {
-  background: url(../img/image37.jpeg);
+  background: url(../img/image43.jpeg);
   background-position: center center;
-  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .community .inner h1 {
   font-family: "Josefin Sans", sans-serif;
@@ -645,9 +646,9 @@ input, a, button {
 }
 
 .youtube .sub-visual {
-  background: url(../img/image37.jpeg);
+  background: url(../img/image46.jpeg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
   background-size: cover;
 }
 .youtube .inner #vidGallery {
@@ -710,8 +711,8 @@ input, a, button {
 
 .gallery .sub-visual {
   background: url(../img/image5.jpeg);
-  background-position: center center;
-  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
 .gallery #search {
   width: 795px;
@@ -882,10 +883,11 @@ input, a, button {
 }
 
 .join .sub-visual {
-  background: url(../img/image7.jpeg);
+  background: url(../img/image37.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 .join .inner h1 {
   font-family: "Josefin Sans", sans-serif;
@@ -1068,7 +1070,7 @@ input, a, button {
 .department .sub-visual {
   background: url(../img/image7.jpeg);
   background-position: center;
-  background-attachment: fixed;
+  background-size: cover;
 }
 .department .inner h1 {
   font-family: "Josefin Sans", sans-serif;
@@ -1104,15 +1106,31 @@ input, a, button {
 .department .inner article .left {
   float: left;
   width: 580px;
-  height: 270px;
+  height: 275px;
   padding: 30px 20px;
   box-sizing: border-box;
   position: relative;
 }
+.department .inner article .left .box {
+  width: 270px;
+  height: 170px;
+  background: khaki;
+  position: absolute;
+  top: 50px;
+  left: 175px;
+}
+.department .inner article .left .box2 {
+  width: 170px;
+  height: 135px;
+  background: darkslategrey;
+  position: absolute;
+  top: 125px;
+  right: 65px;
+}
 .department .inner article .left h2 {
   position: absolute;
   top: 30px;
-  left: 170px;
+  left: 140px;
 }
 .department .inner article .right {
   float: right;
@@ -1232,7 +1250,7 @@ input, a, button {
 }
 
 .location .sub-visual {
-  background: url(../img/image7.jpeg);
+  background: url(../img/image48.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1286,9 +1304,9 @@ input, a, button {
   width: 380px;
   height: 180px;
   margin: 0 0 160px;
-  background-image: url(../img/image37.jpeg);
+  background-image: url(../img/image21.jpeg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center bottom;
   background-size: cover;
 }
 .location .inner article .right .address p {
@@ -1434,7 +1452,7 @@ input, a, button {
 }
 
 .help .sub-visual {
-  background: url(../img/image8.jpeg);
+  background: url(../img/image22.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1463,7 +1481,7 @@ input, a, button {
   line-height: 20px;
 }
 .help .inner article {
-  margin: 0 0 90px;
+  margin: 0 0 70px;
   box-sizing: border-box;
 }
 .help .inner article::after {
@@ -1555,16 +1573,41 @@ input, a, button {
 .help .inner article .right dl dd:nth-of-type(1) {
   display: block;
 }
+.help .inner .support {
+  width: 100%;
+  padding: 10px 0 0;
+}
+.help .inner .support .inner {
+  width: 1180px;
+  margin: 0 auto;
+  padding: 50px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+}
+.help .inner .support .inner article span {
+  display: inline-block;
+  margin: 0 10px 50px 0;
+  font-size: 20px;
+  font-weight: 500;
+  color: #18278c;
+}
+.help .inner .support .inner article p {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 600;
+}
 .help .inner .subscribe {
   position: relative;
   width: 100%;
   padding: 50px;
   box-sizing: border-box;
-  background-image: url(../img/image40.jpeg);
+  background-image: url(../img/image9.jpeg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-attachment: fixed;
 }
 .help .inner .subscribe > .inner {
   width: 1180px;
@@ -1575,6 +1618,9 @@ input, a, button {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+}
+.help .inner .subscribe > .inner h2 {
+  color: #fff;
 }
 .help .inner .subscribe > .inner input[type=email] {
   width: 380px;
@@ -1598,27 +1644,6 @@ input, a, button {
 .help .inner .subscribe > .inner input[type=submit]:hover {
   color: #fff;
   background: #18278c;
-}
-.help .inner .support {
-  width: 100%;
-  padding: 100px 0;
-}
-.help .inner .support .inner {
-  width: 1180px;
-  margin: 0 auto;
-  padding: 50px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-content: center;
-}
-.help .inner .support .inner article span {
-  display: inline-block;
-  margin: 0 10px 50px 0;
-  font-size: 20px;
-  font-weight: 500;
 }
 
 #skipNavi li a {

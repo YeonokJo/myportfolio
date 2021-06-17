@@ -5,7 +5,8 @@
   .sub-visual {
     background: url(../img/image7.jpeg);
     background-position: center;
-    background-attachment: fixed;
+    // background-attachment: fixed;
+    background-size: cover;
   }
 
   .inner {
@@ -51,15 +52,42 @@
       .left {
         float: left;
         width: 580px;
-        height: 270px;
+        height: 275px;
         padding: 30px 20px;
         box-sizing: border-box;
         position: relative;
 
+        .box {
+          width: 270px;
+          height: 170px;
+          background: khaki;
+          position: absolute;
+          top: 50px;
+          left: 175px;
+          //opacity: 0.9;
+          //z-index: 2;
+          // border: 5px solid khaki
+        }
+
+        .box2 {
+          width: 170px;
+          height: 135px;
+          background: darkslategrey;
+          position: absolute;
+          top: 125px;
+          right: 65px;
+          //z-index: 1;
+          // opacity: 0.9;
+          // background-image: url(../img/image5.jpeg);
+          // background-position: center;
+          // background-size: cover;
+        }
+
         h2 {
           position: absolute;
           top: 30px;
-          left: 170px;
+          left: 140px;
+          //z-index: 3;
         }
       }
 

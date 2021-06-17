@@ -3,8 +3,9 @@
   
   .sub-visual {
     background: url(../img/image5.jpeg);
-    background-position: center center;
-    background-attachment: fixed;
+    background-position: center ;
+    background-size: cover;
+    // background-attachment: fixed;
   }
   
   #search {
