@@ -224,3 +224,91 @@
 }
 
 
+// tablet
+@media screen and (max-width: 1179px) {
+  .gallery {
+  
+    >.inner {
+
+      width: 100%;
+      
+      article {
+        display: flex;
+        flex-wrap: wrap;
+
+        ul {
+          padding: 0 0 0 11%;
+          box-sizing: border-box;
+
+          h1 {
+            width: 100%;
+          }
+    
+          li {
+            background: #f8f8f8;
+            width: 40%;
+            margin: 0 7% 7% 0;
+    
+            &:nth-child(2),
+            &:nth-child(4) {
+              margin-right: 0;
+            }
+    
+            .order {
+              display: none;
+            }
+
+            img {
+              display: block;
+              width: 130px;
+              height: 140px;
+              margin: 30px auto;
+            }
+    
+            span {
+              font-size: 15px;
+            }
+    
+            p {
+              width: 50%;
+              margin: 0 auto 20px; 
+              font-size: 13px;
+              color: #18278c;
+            }
+          }
+        }
+      }
+  
+      #wrap {
+      
+        #gallery {
+          padding: 30px 0 0 11%;
+          background: #fff;
+
+          >ul {
+            width: 90%;          
+
+            >li {
+              width: 33.333%;  
+            
+              &:last-child {
+                display: none;
+              }
+    
+              .inner {
+                padding: 10%; 
+              }
+            }
+          }    
+        }
+      }
+    }
+  }
+}
+
+// mobile
+
+@media screen and (max-width: 539px) {
+  
+}
+

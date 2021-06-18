@@ -922,6 +922,64 @@ input, a, button {
   opacity: 1;
 }
 
+@media screen and (max-width: 1179px) {
+  .gallery > .inner {
+    width: 100%;
+  }
+  .gallery > .inner article {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .gallery > .inner article ul {
+    padding: 0 0 0 11%;
+    box-sizing: border-box;
+  }
+  .gallery > .inner article ul h1 {
+    width: 100%;
+  }
+  .gallery > .inner article ul li {
+    background: #f8f8f8;
+    width: 40%;
+    margin: 0 7% 7% 0;
+  }
+  .gallery > .inner article ul li:nth-child(2), .gallery > .inner article ul li:nth-child(4) {
+    margin-right: 0;
+  }
+  .gallery > .inner article ul li .order {
+    display: none;
+  }
+  .gallery > .inner article ul li img {
+    display: block;
+    width: 130px;
+    height: 140px;
+    margin: 30px auto;
+  }
+  .gallery > .inner article ul li span {
+    font-size: 15px;
+  }
+  .gallery > .inner article ul li p {
+    width: 50%;
+    margin: 0 auto 20px;
+    font-size: 13px;
+    color: #18278c;
+  }
+  .gallery > .inner #wrap #gallery {
+    padding: 30px 0 0 11%;
+    background: #fff;
+  }
+  .gallery > .inner #wrap #gallery > ul {
+    width: 90%;
+  }
+  .gallery > .inner #wrap #gallery > ul > li {
+    width: 33.333%;
+  }
+  .gallery > .inner #wrap #gallery > ul > li:last-child {
+    display: none;
+  }
+  .gallery > .inner #wrap #gallery > ul > li .inner {
+    padding: 10%;
+  }
+}
 .join .sub-visual {
   background: url(../img/image37.jpeg);
   background-repeat: no-repeat;
@@ -1175,7 +1233,6 @@ input, a, button {
 .department .inner article .right {
   float: right;
   width: 580px;
-  height: 270px;
   padding: 30px;
   box-sizing: border-box;
 }
@@ -1304,14 +1361,15 @@ input, a, button {
     right: 105px;
   }
   .department .inner article .right {
-    width: 100%;
+    width: 70%;
+    padding: 20px 30px;
   }
   .department .inner article .right p {
     width: 80%;
   }
   .department .inner .division {
     width: 100%;
-    padding: 60px 0;
+    padding: 60px 0 0;
   }
   .department .inner .division .div-tree .depth1 .ceo {
     width: 150px;
@@ -1402,7 +1460,7 @@ input, a, button {
   width: 380px;
   height: 180px;
   margin: 0 0 160px;
-  background-image: url(../img/image21.jpeg);
+  background-image: url(../img/image56.jpeg);
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
@@ -1474,6 +1532,10 @@ input, a, button {
   height: 500px;
   background: #000;
   margin: 20px;
+  filter: saturate(5%);
+}
+.location .inner .location #map:hover {
+  filter: saturate(100%);
 }
 .location .inner .location .traffic {
   position: absolute;
@@ -1888,15 +1950,22 @@ input, a, button {
   position: absolute;
   left: 0;
   top: 0;
-  background: darkslategrey;
-  transition: 0.5s;
+  background: #366671;
+  background: #b5c7c6;
+  background: #f8f8f8;
+  background: #efefef;
 }
 #header .header-lower > .inner #gnb > li .sub .left h2 {
   margin: 0 0 20px;
   font-family: "Lato", sans-serif;
   font-size: 25px;
-  font-weight: 500;
-  color: floralwhite;
+  font-weight: 400;
+  color: palegoldenrod;
+  color: #e6e5e3;
+  color: #366671;
+  color: #254c5f;
+  color: #196383;
+  color: #452d45;
   letter-spacing: 0.15em;
   text-align: right;
 }
@@ -1912,19 +1981,24 @@ input, a, button {
   font-family: "Josefin Sans", sans-serif;
   font-size: 15px;
   font-weight: 500;
-  color: salmon;
+  color: #b5c7c6;
+  color: #20404f;
+  color: #2187a5;
   letter-spacing: 0.25em;
+}
+#header .header-lower > .inner #gnb > li .sub .left ul li a:hover {
+  color: #196383;
+}
+#header .header-lower > .inner #gnb > li .sub .left ul li a:hover::before {
+  display: inline-block;
 }
 #header .header-lower > .inner #gnb > li .sub .left ul li a::before {
   content: "";
   margin: 3px 10px 3px 0;
   width: 5px;
   height: 5px;
-  background: khaki;
+  background: #ba472e;
   display: none;
-}
-#header .header-lower > .inner #gnb > li .sub .left ul li a:hover::before {
-  display: inline-block;
 }
 #header .header-lower > .inner #gnb > li .sub .right {
   width: 60%;
@@ -1937,15 +2011,9 @@ input, a, button {
   background: #fff;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  align-content: space-between;
+  justify-content: flex-start;
+  align-content: center;
   flex-wrap: wrap;
-}
-#header .header-lower > .inner #gnb > li .sub .right article .box {
-  width: 10px;
-  height: 10vmax;
-  background: antiquewhite;
-  margin: 0 0 20px;
 }
 #header .header-lower > .inner #gnb > li .sub .right article h2 {
   font: bold 16px/1 "arial";
@@ -1956,10 +2024,23 @@ input, a, button {
   font: 14px/1.2 "arial";
   color: #333;
 }
-#header .header-lower > .inner #gnb > li .sub .right article .sub-img {
-  width: 200px;
-  height: 10vmax;
-  border: 2px solid darkslategrey;
+#header .header-lower > .inner #gnb > li .sub .right article .right-img {
+  width: 180px;
+  height: 110px;
+  position: absolute;
+  top: 0;
+  right: 70px;
+  background: snow;
+  background-image: url(../img/image41.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0;
+  transition: 1s;
+}
+#header .header-lower > .inner #gnb > li .sub .right article .right-img.on {
+  top: 70px;
+  opacity: 1;
 }
 #header .header-lower > .inner .util {
   position: absolute;

@@ -94,7 +94,7 @@
       .right {
         float: right;
         width: 580px;
-        height: 270px;
+        //height: 270px;
         padding: 30px;
         box-sizing: border-box;
 
@@ -240,7 +240,7 @@
       article {
 
         .left {
-
+          //margin-left: 10px;
 
           .box {
             width: 220px;
@@ -256,9 +256,10 @@
         }
   
         .right {
+          width: 70%;
+          padding: 20px 30px;
+         //  margin-left: 45px;
 
-          width: 100%;
-          
           p {
             width: 80%;
           }
@@ -267,7 +268,7 @@
   
       .division {
         width: 100%;
-        padding: 60px 0;
+        padding: 60px 0 0;
   
         .div-tree {
 

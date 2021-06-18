@@ -1,3 +1,4 @@
+var $gnb = $("#gnb");
 var $gnb_li = $("#gnb > li");
 var $gnb_left = $("#gnb").find(".left");
 var $gnb_sub = $("#gnb").find(".sub");
@@ -5,17 +6,29 @@ var $gnb_sub = $("#gnb").find(".sub");
 $gnb_li.on("mouseenter ", function () {
   $(this).find(".sub").show();
   $(this).find("a").addClass("on");
+  // $(this).find(".left ul").animate({marginLeft: "260"}, 700);
 });
 
 $gnb_li.on("mouseleave ", function () {
   $(this).find(".sub").hide();
   $(this).find("a").removeClass("on");
-  $(this).find(".left ul").animate({marginLeft: 0}, 500);
+  
+  // $(this).find(".left ul").animate({marginLeft: 0}, 500);
 });
 
 $gnb_sub.on("mouseenter", function(){
-  $(this).find(".left ul").animate({marginLeft: "260"}, 700);
+  $(this).find(".left ul").animate({marginLeft: "260"}, 800);
+  $(this).find(".right-img").addClass("on");
 });
+
+$gnb_li.on("mouseleave", function(){
+  $(this).find(".left ul").animate({marginLeft: 0});
+  $(this).find(".right-img").removeClass("on");
+});
+
+// $gnb_sub.on("mouseleave", function(){
+//   $(this).find(".left ul").animate({marginLeft: 0}, 700);
+// });
 
 
 //gnb_li의 갯수만큼 반복을 돌면서 이벤트 연결

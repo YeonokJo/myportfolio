@@ -133,8 +133,9 @@
             right: 0;
             top: 43px;     
             font-size: 30px;
-            background: #f8f8f8;        
+            background: #f8f8f8; 
             display: none;
+            // z-index: 1;
 
             &::before {
               content: "";
@@ -166,15 +167,24 @@
               position: absolute;
               left: 0;
               top: 0;
-              background: darkslategrey;
-              transition: 0.5s;
+              background: #366671;
+              background: #b5c7c6; 
+              background: #f8f8f8;
+              background: #efefef;
  
               h2 {
                 margin: 0 0 20px;
                 font-family: 'Lato', sans-serif;
                 font-size: 25px;
-                font-weight: 500;  
-                color: floralwhite;
+                font-weight: 400;  
+                color: palegoldenrod;
+                color: #e6e5e3;
+                color: #366671;
+                color: #254c5f;
+                color: #196383;
+                // color: #2187a5;
+                // color: #008974;
+                color: #452d45;
                 letter-spacing: 0.15em;
                 text-align: right;
               }
@@ -191,20 +201,28 @@
                     font-family: 'Josefin Sans', sans-serif;
                     font-size: 15px;
                     font-weight: 500;  
-                    color: salmon;
+                    color: #b5c7c6;
+                    color: #20404f;
+                    color: #2187a5;
+                    // color: #196383;
+                    //color: #254c5f;
                     letter-spacing: 0.25em;
+
+                    &:hover {
+                      color: #196383;
+
+                      &::before {
+                        display: inline-block;
+                      }     
+                    }
 
                     &::before {
                       content: "";
                       margin: 3px 10px 3px 0;
                       width: 5px;
                       height: 5px;
-                      background: khaki;
+                      background: #ba472e;
                       display: none;
-                    }
-
-                    &:hover::before {
-                      display: inline-block;
                     }
                   }
                 }
@@ -222,32 +240,17 @@
               background:#fff;
               display: flex;
               flex-direction: row;
-              justify-content: space-evenly;
-              align-content: space-between;
+              justify-content: flex-start;
+              align-content: center;
               flex-wrap: wrap;
 
 
               article {
-                .box {
-                  width: 10px;
-                  height: 10vmax;
-                  background: antiquewhite;
-                  margin: 0 0 20px;
-                }
-            
+                
                 h2 {
                   font: bold 16px/1 'arial';
                   color: #333;
                   margin: 0 0 10px;
-
-                  // &::before {
-                  //   content: "";
-                  //   display: inline-block;
-                  //   width: 2px;
-                  //   height: 10vmax;
-                  //   background: antiquewhite;
-                  //   margin: 0 0 20px;
-                  // }
                 }
             
                 p {
@@ -255,10 +258,25 @@
                   color: #333;
                 }
 
-                .sub-img {
-                  width: 200px;
-                  height: 10vmax;
-                  border: 2px solid darkslategrey;
+                .right-img {
+                  width: 180px;
+                  height: 110px;
+                  position: absolute;
+                  top: 0;
+                  right: 70px;
+                  background: snow;
+                  background-image: url(../img/image41.jpeg);
+                  background-repeat: no-repeat;
+                  background-position: center;
+                  background-size: cover;
+                  opacity: 0;
+                  transition: 1s;
+                  // z-index: 2;
+  
+                  &.on {
+                    top: 70px;
+                    opacity: 1;
+                  }
                 }
               }
 
