@@ -749,6 +749,59 @@ input, a, button {
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 1179px) {
+  .youtube .inner {
+    width: 100%;
+  }
+  .youtube .inner #vidGallery {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-between;
+    flex-wrap: wrap;
+  }
+  .youtube .inner #vidGallery article {
+    border-bottom: none;
+    margin: 0 auto;
+    width: 45%;
+  }
+  .youtube .inner #vidGallery article .pic {
+    width: 90%;
+    height: 160px;
+    margin: 0 auto 10px;
+  }
+  .youtube .inner #vidGallery article .con {
+    width: 80%;
+    padding: 10px 15px;
+  }
+  .youtube .inner #vidGallery article .con h2 {
+    font-size: 17px;
+  }
+  .youtube .inner #vidGallery article .con p {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .youtube .inner #vidGallery article:last-child {
+    display: none;
+  }
+}
+@media screen and (max-width: 859px) {
+  .youtube .inner #vidGallery article {
+    width: 100%;
+    display: flex;
+  }
+  .youtube .inner #vidGallery article .pic {
+    margin: 0 20px 0 0;
+  }
+  .youtube .inner #vidGallery article .con {
+    width: 60%;
+  }
+  .youtube .inner #vidGallery article .con h2 {
+    font-size: 15px;
+  }
+  .youtube .inner #vidGallery article .con p {
+    font-size: 13px;
+  }
+}
 .gallery .sub-visual {
   background: url(../img/image5.jpeg);
   background-position: center;
