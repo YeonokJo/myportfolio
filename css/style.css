@@ -674,9 +674,17 @@ input, a, button {
     margin: 15px 0 3px 0;
     font-weight: 600;
   }
+  .community .inner .sub-menu {
+    position: relative;
+    top: 0;
+    right: 60px;
+  }
   .community .inner table {
     width: 90%;
     margin-left: 5%;
+  }
+  .community .inner table th {
+    display: block;
   }
   .community .inner table td:nth-child(2) {
     display: none;
@@ -807,41 +815,6 @@ input, a, button {
   background-position: center;
   background-size: cover;
 }
-.gallery #search {
-  width: 795px;
-  margin: 0 auto;
-  z-index: 2;
-}
-.gallery #search input[type=text] {
-  width: 630px;
-  height: 40px;
-  background: #fff;
-  border: 1px solid #a9cce3;
-  margin-right: 14px;
-  padding: 5px 10px;
-  box-sizing: border-box;
-  color: #2471a3;
-}
-.gallery #search input[type=text]::placeholder {
-  color: #a9cce3;
-}
-.gallery #search input[type=text]:focus {
-  outline: 1px solid #2471a3;
-}
-.gallery #search button {
-  width: 144px;
-  height: 40px;
-  background: #2471a3;
-  font: bold 13px/40px "arial";
-  color: #fff;
-  text-align: center;
-  border: 1px solid #2471a3;
-  border-radius: 4px;
-  cursor: pointer;
-}
-.gallery #search button:hover {
-  background: #1f618d;
-}
 .gallery > .inner h1 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 21px;
@@ -864,49 +837,55 @@ input, a, button {
   color: #333;
   line-height: 20px;
 }
-.gallery > .inner article {
+.gallery > .inner .process {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.gallery > .inner .process .process-img {
   padding: 0 0 90px;
   box-sizing: border-box;
+  flex: 2;
+  transition: 0.5s;
 }
-.gallery > .inner article::after {
-  content: "";
-  display: block;
-  clear: both;
+.gallery > .inner .process .process-img > .inner ul {
+  width: 90%;
+  display: flex;
 }
-.gallery > .inner article li {
+.gallery > .inner .process .process-img > .inner ul li {
   position: relative;
-  float: left;
-  width: 280px;
-  margin-right: 20px;
-  padding: 40px;
-  box-sizing: border-box;
+  flex: 1;
   text-align: center;
+  transition: 0.5s;
 }
-.gallery > .inner article li:last-child {
-  margin-right: 0;
-}
-.gallery > .inner article li .order {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  width: 20px;
-  height: 20px;
-  font-family: "Josefin Sans, sans-serif";
-  font-size: 12px;
-  font-weight: 600;
-  color: #18278c;
-  line-height: 20px;
-  text-align: center;
-  background: #fff;
-  border: 1px solid #18278c;
-}
-.gallery > .inner article li img {
-  display: block;
+.gallery > .inner .process .process-img > .inner ul li .img {
   width: 80%;
-  height: 150px;
+  height: 270px;
   margin: 20px auto;
+  background-position: center;
+  background-size: cover;
 }
-.gallery > .inner article li span {
+.gallery > .inner .process .process-img > .inner ul li .img.work1 {
+  background: url(../img/image59.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+.gallery > .inner .process .process-img > .inner ul li .img.work2 {
+  background: url(../img/image54.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+.gallery > .inner .process .process-img > .inner ul li .img.work3 {
+  background: url(../img/image55.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+.gallery > .inner .process .process-img > .inner ul li .img.work4 {
+  background: url(../img/image58.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+.gallery > .inner .process .process-img > .inner ul li span {
   display: block;
   margin: 0 0 20px;
   font-family: "Montserrat", sans-serif;
@@ -914,9 +893,64 @@ input, a, button {
   font-weight: 600;
   color: #000;
 }
-.gallery > .inner article li p {
+.gallery > .inner .process .process-img > .inner ul li p {
+  width: 110px;
+  margin: 0 auto;
   font-size: 12px;
   color: #18278c;
+}
+.gallery > .inner .process .process-img > .inner ul li a {
+  display: block;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #18278c;
+  line-height: 20px;
+}
+.gallery > .inner .process .process-img:hover {
+  flex: 1;
+}
+.gallery > .inner .process .process-detail {
+  flex: 1;
+}
+.gallery > .inner #search {
+  width: 795px;
+  margin: 0 auto;
+  z-index: 2;
+}
+.gallery > .inner #search input[type=text] {
+  width: 630px;
+  height: 40px;
+  background: #fff;
+  border: 1px solid #a9cce3;
+  margin-right: 14px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  color: #2471a3;
+}
+.gallery > .inner #search input[type=text]::placeholder {
+  color: #a9cce3;
+}
+.gallery > .inner #search input[type=text]:focus {
+  outline: 1px solid #2471a3;
+}
+.gallery > .inner #search button {
+  width: 144px;
+  height: 40px;
+  background: #2471a3;
+  font: bold 13px/40px "arial";
+  color: #fff;
+  text-align: center;
+  border: 1px solid #2471a3;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.gallery > .inner #search button:hover {
+  background: #1f618d;
 }
 .gallery > .inner #wrap #gallery {
   width: 100%;
@@ -997,9 +1031,6 @@ input, a, button {
   }
   .gallery > .inner article ul li:nth-child(2), .gallery > .inner article ul li:nth-child(4) {
     margin-right: 0;
-  }
-  .gallery > .inner article ul li .order {
-    display: none;
   }
   .gallery > .inner article ul li img {
     display: block;
@@ -1512,7 +1543,7 @@ input, a, button {
 .location .inner article .right .address .img {
   width: 380px;
   height: 180px;
-  margin: 0 0 160px;
+  margin: 0 0 150px;
   background-image: url(../img/image56.jpeg);
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -1521,7 +1552,7 @@ input, a, button {
 .location .inner article .right .address p {
   padding: 0 0 10px;
   box-sizing: border-box;
-  font-weight: 500;
+  font-weight: 600;
   color: #18278c;
 }
 .location .inner article .left {
@@ -1560,16 +1591,15 @@ input, a, button {
   font-family: "Noto Sans", sans-serif;
   font-size: 13px;
   font-weight: 600;
-  color: #18278c;
-  background: #fff;
+  color: #fff;
+  background: #18278c;
   border: none;
   border: 1px solid #18278c;
   cursor: pointer;
   transition: 0.5s;
 }
 .location .inner article .left input[type=submit]:hover {
-  color: #fff;
-  background: #18278c;
+  text-decoration: underline;
 }
 .location .inner .location {
   padding: 10px 0 40px;
@@ -1664,6 +1694,161 @@ input, a, button {
   text-align: right;
 }
 
+@media screen and (max-width: 1179px) {
+  .location .inner {
+    width: 100%;
+  }
+  .location .inner .location {
+    height: 750px;
+  }
+  .location .inner .location::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .location .inner .location #map {
+    width: 80%;
+    height: 400px;
+    margin: 7% 0 0 11%;
+  }
+  .location .inner .location .traffic {
+    top: 23%;
+    left: 13%;
+  }
+  .location .inner .location .traffic li {
+    float: left;
+  }
+  .location .inner .location .branch {
+    position: absolute;
+    bottom: 30px;
+    right: 70px;
+  }
+  .location .inner .location .branch li {
+    float: left;
+    margin-right: 10px;
+  }
+  .location .inner .location .branch li a {
+    display: block;
+    width: 100px;
+    margin: 0 0 20px 50px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #18278c;
+    color: #fff;
+    line-height: 20px;
+    text-align: right;
+    background: #fff;
+    background: #18278c;
+    border: 1px solid #18278c;
+    transition: 0.5s;
+  }
+  .location .inner .location .branch li a:hover, .location .inner .location .branch li a.on {
+    color: #fff;
+    color: #18278c;
+    background: #18278c;
+    background: #fff;
+  }
+  .location .inner .location .branch li p {
+    width: 150px;
+    margin: 0 0 10px;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 12px;
+    color: #18278c;
+    text-align: right;
+  }
+  .location .inner article {
+    width: 90%;
+    padding: 70px 0 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+  .location .inner article .left {
+    float: left;
+    width: 70%;
+    width: 100%;
+    height: 560px;
+    padding: 0 0 0 11%;
+    box-sizing: border-box;
+    position: relative;
+    order: 2;
+  }
+  .location .inner article .left h2 {
+    color: #18278c;
+  }
+  .location .inner article .left h3 {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    margin: 20px 0;
+  }
+  .location .inner article .left textarea,
+.location .inner article .left input[type=text],
+.location .inner article .left input[type=email] {
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid #cdcdcd;
+  }
+  .location .inner article .left input[type=submit] {
+    display: block;
+    position: absolute;
+    bottom: 120px;
+    right: 100px;
+    width: 150px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #18278c;
+    background: #fff;
+    border: none;
+    border: 1px solid #18278c;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .location .inner article .left input[type=submit]:hover {
+    color: #fff;
+    background: #18278c;
+  }
+  .location .inner article .right {
+    float: right;
+    width: 30%;
+    width: 100%;
+    height: 260px;
+    padding: 30px;
+    box-sizing: border-box;
+    position: relative;
+    order: 1;
+  }
+  .location .inner article .right .address {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    text-align: right;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .location .inner article .right .address .img {
+    width: 210px;
+    height: 140px;
+    margin: 0 0 50px;
+    background-image: url(../img/image56.jpeg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+  }
+  .location .inner article .right .address p {
+    padding: 0 0 10px;
+    box-sizing: border-box;
+    font-weight: 500;
+    color: #18278c;
+  }
+}
 .help .sub-visual {
   background: url(../img/image22.jpeg);
   background-repeat: no-repeat;
@@ -1693,59 +1878,66 @@ input, a, button {
   color: #333;
   line-height: 20px;
 }
-.help .inner article {
-  margin: 0 0 70px;
+.help .inner .help-detail {
+  padding: 50px 0;
+}
+.help .inner .help-detail .inner {
+  display: flex;
+  justify-content: center;
+}
+.help .inner .help-detail .inner .help-txt {
+  width: 40%;
+  padding: 30px 60px;
   box-sizing: border-box;
 }
-.help .inner article::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-.help .inner article .left {
-  float: left;
-  width: 580px;
-  padding: 30px;
-  box-sizing: border-box;
-}
-.help .inner article .left h2 {
+.help .inner .help-detail .inner .help-txt h2 {
   color: #18278c;
 }
-.help .inner article .left h3 {
+.help .inner .help-detail .inner .help-txt p {
   font-family: "Noto Sans", sans-serif;
-  font-size: 14px;
-  font-weight: 600;
   color: #000;
-  margin: 20px 0;
+  line-height: 1.35em;
 }
-.help .inner article .left .faq-img {
-  margin: 30px 0 0;
-  overflow: hidden;
+.help .inner .help-detail .inner .help-icon {
+  width: 40%;
+  padding: 30px 50px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
 }
-.help .inner article .left .faq-img:hover .img {
-  transform: scale(1.1);
+.help .inner .help-detail .inner .help-icon > div {
+  width: 120px;
+  height: 120px;
+  margin: 12px;
+  background: lightsteelblue;
 }
-.help .inner article .left .faq-img .img {
-  width: 100%;
-  height: 300px;
-  background-image: url(../img/image4.jpeg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  transition: 0.5s;
+.help .inner .faq-a {
+  padding: 30px 0 50px;
+  box-sizing: border-box;
 }
-.help .inner article .right {
-  float: right;
+.help .inner .faq-a .inner .right {
+  margin: 0 0 0 140px;
   padding: 30px 20px;
   box-sizing: border-box;
   width: 580px;
+  width: 75%;
   position: relative;
 }
-.help .inner article .right dl {
+.help .inner .faq-a .inner .right h2 {
+  color: #18278c;
+}
+.help .inner .faq-a .inner .right h2 .fa-question-circle {
+  margin: 0 20px 0 0;
+  font-size: 20px;
+}
+.help .inner .faq-a .inner .right dl {
   margin: 30px 0;
   border: 1px solid #cdcdcd;
+  background: #f9f9f9;
 }
-.help .inner article .right dl dt {
+.help .inner .faq-a .inner .right dl dt {
   width: 100%;
   padding: 15px;
   box-sizing: border-box;
@@ -1757,22 +1949,22 @@ input, a, button {
   cursor: pointer;
   position: relative;
 }
-.help .inner article .right dl dt::before {
+.help .inner .faq-a .inner .right dl dt::before {
   content: "+";
   padding: 15px 10px;
   box-sizing: border-box;
   font-size: 22px;
   color: #18278c;
 }
-.help .inner article .right dl dt > span {
+.help .inner .faq-a .inner .right dl dt > span {
   position: absolute;
   top: 18px;
   left: 60px;
 }
-.help .inner article .right dl dt:hover::before, .help .inner article .right dl dt.on::before {
+.help .inner .faq-a .inner .right dl dt:hover::before, .help .inner .faq-a .inner .right dl dt.on::before {
   content: "-";
 }
-.help .inner article .right dl dd {
+.help .inner .faq-a .inner .right dl dd {
   width: 100%;
   padding: 20px 20px 20px 60px;
   box-sizing: border-box;
@@ -1783,12 +1975,12 @@ input, a, button {
   border-bottom: 1px solid #cdcdcd;
   display: none;
 }
-.help .inner article .right dl dd:nth-of-type(1) {
+.help .inner .faq-a .inner .right dl dd:nth-of-type(1) {
   display: block;
 }
 .help .inner .support {
   width: 100%;
-  padding: 10px 0 0;
+  padding: 10px 0 90px;
 }
 .help .inner .support .inner {
   width: 1180px;
@@ -1800,12 +1992,15 @@ input, a, button {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-content: center;
+  background: #f9f9f9;
+}
+.help .inner .support .inner article {
+  margin: 0;
 }
 .help .inner .support .inner article span {
   display: inline-block;
   margin: 0 10px 50px 0;
   font-size: 20px;
-  font-weight: 500;
   color: #18278c;
 }
 .help .inner .support .inner article p {
@@ -1815,48 +2010,63 @@ input, a, button {
 .help .inner .subscribe {
   position: relative;
   width: 100%;
-  padding: 50px;
-  box-sizing: border-box;
-  background-image: url(../img/image9.jpeg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
 }
 .help .inner .subscribe > .inner {
   width: 1180px;
   margin: 0 auto;
-  text-align: center;
+  padding: 50px;
+  box-sizing: border-box;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-start;
+  background: #f9f9f9;
 }
 .help .inner .subscribe > .inner h2 {
-  color: #fff;
+  width: 70%;
+  margin: 0 0 20px 130px;
+  color: #18278c;
+  text-align: left;
+}
+.help .inner .subscribe > .inner h2 .fa-newspaper {
+  margin: 0 20px 0 0;
+  font-size: 20px;
 }
 .help .inner .subscribe > .inner input[type=email] {
-  width: 380px;
+  width: 690px;
   height: 30px;
-  margin: 0 0 20px;
+  margin: 0 10px 0 130px;
+  padding: 15px 40px;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 15px;
+  color: #777;
   border: 1px solid #18278c;
 }
+.help .inner .subscribe > .inner input[type=email]::placeholder {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: royalblue;
+  opacity: 0.6;
+}
 .help .inner .subscribe > .inner input[type=submit] {
-  display: block;
-  width: 80px;
+  width: 110px;
   font-family: "Noto Sans", sans-serif;
   font-size: 12px;
-  font-weight: 600;
-  color: #18278c;
+  font-weight: 700;
+  color: #fff;
   line-height: 30px;
-  background: #fff;
+  background: #18278c;
   border: 1px solid #18278c;
   cursor: pointer;
   transition: 0.5s;
 }
 .help .inner .subscribe > .inner input[type=submit]:hover {
   color: #fff;
+  text-decoration: underline;
   background: #18278c;
+  border: 1px solid #18278c;
 }
 
 #skipNavi li a {
@@ -2007,6 +2217,11 @@ input, a, button {
   background: #b5c7c6;
   background: #f8f8f8;
   background: #efefef;
+  background: #92b5d9;
+  background: #7dabd0;
+  background: #60aba8;
+  background: #2b78a2;
+  background: #b6dee7;
 }
 #header .header-lower > .inner #gnb > li .sub .left h2 {
   margin: 0 0 20px;
@@ -2019,6 +2234,7 @@ input, a, button {
   color: #254c5f;
   color: #196383;
   color: #452d45;
+  color: #2b78a2;
   letter-spacing: 0.15em;
   text-align: right;
 }

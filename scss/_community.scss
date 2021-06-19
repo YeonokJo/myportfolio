@@ -131,9 +131,6 @@
     }
 
     .sub-menu {
-      // position: relative;
-      // top: 0;
-      // right: 0;
       padding: 10px;
       box-sizing: border-box;
 
@@ -311,9 +308,8 @@
   .community {
 
     .inner {
-
       width: 100%;
-
+      
       article {
         padding: 0 0 110px;
        
@@ -347,11 +343,19 @@
         }
       }
   
-      
+      .sub-menu {
+        position: relative;
+        top: 0;
+        right: 60px;
+      }
   
       table {
         width: 90%;
         margin-left: 5%;
+
+        th {
+          display: block;
+        }
   
         td {
           
