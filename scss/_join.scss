@@ -231,3 +231,186 @@
     }
   }
 }
+
+// tablet
+@media screen and (max-width: 1179px) {
+  .join {
+
+    .inner {
+      width: 100%;
+
+      fieldset {
+        
+        table {
+    
+          tr {
+    
+            th {
+              width: 17%;
+              padding: 0 0 0 2%;
+    
+              label {
+                font-size: 12px;
+              }
+            }
+    
+            td {
+    
+              input {
+                padding: 0 0 0 3%;
+    
+                &::placeholder {
+                  font-size: 11px;
+                }
+              }
+    
+              p {
+                font-size: 11px;
+              }
+            }
+    
+            &.birth {
+
+              select {
+                width: 12%;
+                margin: 0 3px;
+              }
+            }
+    
+            &.phone {
+  
+              select {
+                margin: 0 0 10px;
+
+                &:nth-child(1) {
+                  display: block;
+                }
+              }
+          }
+    
+            &.accept {
+              
+              label {
+                padding: 3px 7px;
+                box-sizing: border-box;
+
+                input[type=checkbox] {
+                  width: 10px;
+                  height: 10px;
+                  margin: 3px 10px 3px 0;
+                }
+              }
+            } 
+            
+            &.join-submit {
+
+              th {
+                input {
+                  width: 80px;
+                  margin: 40px 7px 0 0;
+                  font-size: 11px;
+                }
+              }  
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// mobile 
+@media screen and (max-width: 539px) {
+  .join {
+
+    .inner {
+      width: 100%;
+
+      fieldset {
+        
+        table {
+    
+          tr {
+    
+            th {
+              width: 17%;
+              padding: 0 0 0 2%;
+              display: none;
+
+              &:last-child {
+                display: block;
+              }
+            }
+    
+            td {
+              padding: 10px;
+              box-sizing: border-box;
+
+              input {
+                width: 100%;
+              }
+    
+              p {
+                font-size: 10px;
+              }
+            }
+    
+            &.birth {
+              input {
+                width: 33%;
+              }
+              select {
+                width: 30%;
+              }
+            }
+    
+            &.phone {
+              
+              select {
+                width: 48%;
+
+                &:nth-child(1) {
+                  display: inline-block;
+                }
+              }
+              
+              input {
+                width: 37%;
+              }
+
+              a {
+                width: 20%;
+              }
+          }
+    
+            &.accept {
+
+              label {
+                padding: 3px 7px;
+                box-sizing: border-box;
+
+                input[type=checkbox] {
+                  width: 10px;
+                  height: 10px;
+                  margin: 3px 10px 3px 0;
+                }
+              }
+            } 
+            
+            &.join-submit {
+
+              th {
+                width: 100%;
+
+                input {
+                  margin: 50px 7px 0;
+                  font-size: 11px;
+                }
+              }  
+            }
+          }
+        }
+      }
+    }
+  }
+}
