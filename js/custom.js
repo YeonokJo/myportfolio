@@ -51,8 +51,10 @@ const menuMo = document.querySelector('.menuMo');
 // btnCall.addEventListener('click', e => {
 //   menuMo.classList.toggle('on')
 // })
-btnCall.onclick = function () { 
+btnCall.onclick = function () {
+  // menuMo.style.position = "sticky";
   menuMo.classList.toggle("on");
+
 }
 
 window.onresize = function(e){ 
@@ -65,7 +67,7 @@ window.onresize = function(e){
 
 const items = document.querySelectorAll('.process li');
 const aside = document.querySelector('aside');
-// const close = aside.querySelector('span');
+const close = aside.querySelector('span');
 
 for (let el of items) {
     el.addEventListener('mouseenter', e => {
@@ -88,6 +90,6 @@ for (let el of items) {
     });
   }
 
-// close.addEventListener('click', e => {
-//   aside.classList.remove('on');
-// })  
+close.addEventListener('click', e => {
+  aside.classList.remove('on');
+})  

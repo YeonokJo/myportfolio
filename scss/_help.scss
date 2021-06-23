@@ -52,18 +52,7 @@
           box-sizing: border-box;
   
           h2 {
-            // font-size: 20px;
             color: #18278c;
-            // margin: 0 0 40px;
-          }
-  
-          p {
-            font-family: 'Noto Sans', sans-serif;
-            // font-size: 17px;
-            // font-weight: 600;
-            color: #000;
-            line-height: 1.35em;
-           // margin: 0 0 50px;
           }
         }
 
@@ -86,26 +75,19 @@
       }
     }
 
-    .faq-a {
+    .faq {
 
       padding: 30px 0 50px;
       box-sizing: border-box;
-      // background: #f8f8f8;
-
 
       .inner {
-        // background: #f9f9f9;
 
-        .right {
+        .faq-table {
           margin: 0 0 0 140px;
           padding: 30px 20px;
           box-sizing: border-box;
-          width: 580px;
           width: 75%;
-          // height: 270px;
-  
-          position: relative;
-  
+
           h2 {
             color: #18278c;
 
@@ -157,7 +139,6 @@
               box-sizing: border-box;
               font-family: "Lato", sans-serif;
               font-size: 12px;
-              //font-weight: 600;
               color: #797979;
               line-height: 1.5em;
               border-bottom: 1px solid #cdcdcd;
@@ -186,9 +167,7 @@
         flex-wrap: wrap;
         justify-content: space-evenly;
         align-content: center;
-        background: #f9f9f9;
-        // border-right: 1px solid royalblue;
-        
+        background: #f9f9f9;        
 
         article {
           margin: 0;
@@ -211,12 +190,6 @@
     .subscribe {
       position: relative;
       width: 100%;
-      
-      // background-image: url(../img/image45.jpeg);
-      // background-repeat: no-repeat;
-      // background-position: center center;
-      // background-size: cover;
-      // background-attachment: fixed;
 
       > .inner {
         width: 1180px;
@@ -278,6 +251,317 @@
             text-decoration: underline;
             background: #18278c;
             border: 1px solid #18278c;
+          }
+        }
+      }
+    }
+  }
+}
+
+// tablet
+@media screen and (max-width: 1179px) {
+  .help {
+  
+    .inner {
+      width :100%;
+      
+      h1 {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 21px;
+        font-weight: 700;
+        color: #18278c;
+        margin: 40px 20px;
+      }
+      
+      h2 {
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 17px;
+        font-weight: 600;
+        color: #333;
+        margin: 0 0 20px;
+      }
+  
+      p {
+        margin: 0 0 20px;
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 15px;
+        color: #333;
+        line-height: 20px;
+      }
+  
+      .help-detail {
+        padding: 50px 0;
+        
+        .inner {
+          flex-direction: column;
+          align-content: center;
+          flex-wrap: wrap;
+
+          .help-txt {
+            width: 60%;
+            padding: 10px;
+          }
+  
+          .help-icon {                     
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            width: 70%;
+            padding: 10px;
+
+            > div {
+              width: 90px;
+              height: 90px;
+              margin: 0 1vh 0 0;
+            }
+          }
+        }
+      }
+  
+      .faq {
+
+        .inner {
+          width: 100%;
+  
+          .faq-table {
+            margin: 0 0 0 11vw;
+            padding: 2vh 2vw;
+
+            dl {
+
+              dt {
+                padding: 20px 10px;
+                font-size: 13px;     
+                
+                &::before {
+                  padding: 20px 10px;
+                  font-size: 21px;
+                }
+    
+                > span {
+                  top: 23px;
+                  left: 45px;
+                }
+               }
+            }
+          }
+        }
+      }
+  
+      .support {
+        width: 100%;
+        padding: 10px 0 90px;
+  
+        .inner {    
+          width: 100%;
+          padding: 20px;
+          flex-direction: column;
+          // background: #fff;
+
+          article {
+            width: 75%;
+            display: flex;
+            align-items: flex-start;
+            padding: 25px 10px;
+  
+            span {
+              margin: 0;
+              font-size: 17px;
+
+              &:nth-child(1) {
+                width: 5vw;
+              }
+
+              &:nth-child(2) {
+                width: 13vw;
+              }
+            }
+  
+            p {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+  
+      .subscribe {
+
+        > .inner {
+          width: 100%;
+          padding: 5vh 0 5vh 14vw;
+
+          h2 {
+            width: 80%;
+            margin: 0 0 3vh;
+            font-size: 15px;
+            font-weight: 500;
+  
+            .fa-newspaper {
+              margin: 0 2vw 0 0;
+              font-size: 20px;
+            }
+          }
+          
+          input[type=email] {
+            width: 55%;
+            margin: 0 2vw 0 0;
+            padding: 2vh 3vw;
+            font-size: 14px;
+  
+            &::placeholder {
+              font-size: 13px;
+            }
+          }
+  
+          input[type=submit] {
+            width: 11vw;
+            font-size: 11px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
+
+// mobile
+@media screen and (max-width: 539px) {
+  .help {
+    padding: 30px 0 50px;
+
+    .inner {
+      width :100%;
+      
+      h1 {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 19px;
+        font-weight: 700;
+        color: #18278c;
+        margin: 40px 20px;
+      }
+      
+      h2 {
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        color: #333;
+        margin: 0 0 20px;
+      }
+  
+      p {
+        margin: 0 0 20px;
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 13px;
+        color: #333;
+        line-height: 20px;
+      }
+  
+      .help-detail {
+        padding: 30px 0;
+        
+        .inner {
+
+          .help-txt {
+            width: 80%;
+          }
+  
+          .help-icon {                     
+            justify-content: flex-start;
+            width: 90%;
+
+            > div {
+              width: 65px;
+              height: 65px;
+            }
+          }
+        }
+      }
+  
+      .faq {
+
+        .inner {
+          width: 100%;
+  
+          .faq-table {
+            margin: 0 auto;
+            padding: 2vh 2vw;
+
+            width: 90%;
+
+            dl {
+
+              dt {
+                padding: 15px 5px;
+                font-size: 12px;     
+                
+                &::before {
+                  padding: 15px 5px;
+                  font-size: 20px;
+                }
+    
+                > span {
+                  top: 19px;
+                  left: 35px;
+                }
+               }
+            }
+          }
+        }
+      }
+  
+      .support {
+        width: 100%;
+        padding: 10px 0 90px;
+  
+        .inner {    
+          width: 100%;
+          padding: 20px;
+          flex-direction: column;
+          // background: #fff;
+          align-content: flex-start;
+
+          article {
+            padding: 15px 20px;
+            flex-wrap: wrap;
+  
+            span {
+              margin: 0 0 1vh;
+              font-size: 16px;
+
+              &:nth-child(1) {
+                width: 5vw;
+              }
+
+              &:nth-child(2) {
+                width: 80%;
+              }
+            }
+          }
+        }
+      }
+  
+      .subscribe {
+
+        > .inner {
+          padding: 5vh 1vw 5vh 7vw;
+
+          h2 {
+            width: 80%;
+            margin: 0 0 3vh;
+            font-size: 14px;
+          }
+          
+          input[type=email] {
+            width: 70%;
+            font-size: 14px;
+  
+            &::placeholder {
+              font-size: 12px;
+            }
+          }
+  
+          input[type=submit] {
+            width: 13vw;
+            font-size: 10px;
           }
         }
       }

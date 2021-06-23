@@ -2,6 +2,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
 ol, ul {
@@ -171,19 +172,14 @@ input, a, button {
   width: 250px;
   height: 140px;
   position: absolute;
-  top: 0;
+  top: 40px;
   left: 80px;
   background: palegoldenrod;
   background-image: url(../img/image61.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  opacity: 0;
   transition: 1s;
-}
-#header .header-lower > .inner #gnb > li .sub .left .left-img.on {
-  top: 40px;
-  opacity: 1;
 }
 #header .header-lower > .inner #gnb > li .sub .left p {
   position: absolute;
@@ -320,7 +316,7 @@ input, a, button {
   width: 1180px;
   margin: 0 auto;
   min-height: 500px;
-  padding: 100px 0 60px;
+  padding: 50px 0 70px;
   box-sizing: border-box;
 }
 .content > .inner .slash::after {
@@ -413,6 +409,11 @@ input, a, button {
   color: #999;
 }
 
+@media screen and (max-width: 1179px) {
+  .content .sub-visual {
+    height: 200px;
+  }
+}
 .community .sub-visual {
   background: url(../img/image43.jpeg);
   background-position: center center;
@@ -2146,11 +2147,6 @@ input, a, button {
 .help .inner .help-detail .inner .help-txt h2 {
   color: #18278c;
 }
-.help .inner .help-detail .inner .help-txt p {
-  font-family: "Noto Sans", sans-serif;
-  color: #000;
-  line-height: 1.35em;
-}
 .help .inner .help-detail .inner .help-icon {
   width: 40%;
   padding: 30px 50px;
@@ -2166,31 +2162,29 @@ input, a, button {
   margin: 12px;
   background: lightsteelblue;
 }
-.help .inner .faq-a {
+.help .inner .faq {
   padding: 30px 0 50px;
   box-sizing: border-box;
 }
-.help .inner .faq-a .inner .right {
+.help .inner .faq .inner .faq-table {
   margin: 0 0 0 140px;
   padding: 30px 20px;
   box-sizing: border-box;
-  width: 580px;
   width: 75%;
-  position: relative;
 }
-.help .inner .faq-a .inner .right h2 {
+.help .inner .faq .inner .faq-table h2 {
   color: #18278c;
 }
-.help .inner .faq-a .inner .right h2 .fa-question-circle {
+.help .inner .faq .inner .faq-table h2 .fa-question-circle {
   margin: 0 20px 0 0;
   font-size: 20px;
 }
-.help .inner .faq-a .inner .right dl {
+.help .inner .faq .inner .faq-table dl {
   margin: 30px 0;
   border: 1px solid #cdcdcd;
   background: #f9f9f9;
 }
-.help .inner .faq-a .inner .right dl dt {
+.help .inner .faq .inner .faq-table dl dt {
   width: 100%;
   padding: 15px;
   box-sizing: border-box;
@@ -2202,22 +2196,22 @@ input, a, button {
   cursor: pointer;
   position: relative;
 }
-.help .inner .faq-a .inner .right dl dt::before {
+.help .inner .faq .inner .faq-table dl dt::before {
   content: "+";
   padding: 15px 10px;
   box-sizing: border-box;
   font-size: 22px;
   color: #18278c;
 }
-.help .inner .faq-a .inner .right dl dt > span {
+.help .inner .faq .inner .faq-table dl dt > span {
   position: absolute;
   top: 18px;
   left: 60px;
 }
-.help .inner .faq-a .inner .right dl dt:hover::before, .help .inner .faq-a .inner .right dl dt.on::before {
+.help .inner .faq .inner .faq-table dl dt:hover::before, .help .inner .faq .inner .faq-table dl dt.on::before {
   content: "-";
 }
-.help .inner .faq-a .inner .right dl dd {
+.help .inner .faq .inner .faq-table dl dd {
   width: 100%;
   padding: 20px 20px 20px 60px;
   box-sizing: border-box;
@@ -2228,7 +2222,7 @@ input, a, button {
   border-bottom: 1px solid #cdcdcd;
   display: none;
 }
-.help .inner .faq-a .inner .right dl dd:nth-of-type(1) {
+.help .inner .faq .inner .faq-table dl dd:nth-of-type(1) {
   display: block;
 }
 .help .inner .support {
@@ -2320,6 +2314,241 @@ input, a, button {
   text-decoration: underline;
   background: #18278c;
   border: 1px solid #18278c;
+}
+
+@media screen and (max-width: 1179px) {
+  .help .inner {
+    width: 100%;
+  }
+  .help .inner h1 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 21px;
+    font-weight: 700;
+    color: #18278c;
+    margin: 40px 20px;
+  }
+  .help .inner h2 {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 20px;
+  }
+  .help .inner p {
+    margin: 0 0 20px;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 15px;
+    color: #333;
+    line-height: 20px;
+  }
+  .help .inner .help-detail {
+    padding: 50px 0;
+  }
+  .help .inner .help-detail .inner {
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  .help .inner .help-detail .inner .help-txt {
+    width: 60%;
+    padding: 10px;
+  }
+  .help .inner .help-detail .inner .help-icon {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    width: 70%;
+    padding: 10px;
+  }
+  .help .inner .help-detail .inner .help-icon > div {
+    width: 90px;
+    height: 90px;
+    margin: 0 1vh 0 0;
+  }
+  .help .inner .faq .inner {
+    width: 100%;
+  }
+  .help .inner .faq .inner .faq-table {
+    margin: 0 0 0 11vw;
+    padding: 2vh 2vw;
+  }
+  .help .inner .faq .inner .faq-table dl dt {
+    padding: 20px 10px;
+    font-size: 13px;
+  }
+  .help .inner .faq .inner .faq-table dl dt::before {
+    padding: 20px 10px;
+    font-size: 21px;
+  }
+  .help .inner .faq .inner .faq-table dl dt > span {
+    top: 23px;
+    left: 45px;
+  }
+  .help .inner .support {
+    width: 100%;
+    padding: 10px 0 90px;
+  }
+  .help .inner .support .inner {
+    width: 100%;
+    padding: 20px;
+    flex-direction: column;
+  }
+  .help .inner .support .inner article {
+    width: 75%;
+    display: flex;
+    align-items: flex-start;
+    padding: 25px 10px;
+  }
+  .help .inner .support .inner article span {
+    margin: 0;
+    font-size: 17px;
+  }
+  .help .inner .support .inner article span:nth-child(1) {
+    width: 5vw;
+  }
+  .help .inner .support .inner article span:nth-child(2) {
+    width: 13vw;
+  }
+  .help .inner .support .inner article p {
+    font-size: 13px;
+  }
+  .help .inner .subscribe > .inner {
+    width: 100%;
+    padding: 5vh 0 5vh 14vw;
+  }
+  .help .inner .subscribe > .inner h2 {
+    width: 80%;
+    margin: 0 0 3vh;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .help .inner .subscribe > .inner h2 .fa-newspaper {
+    margin: 0 2vw 0 0;
+    font-size: 20px;
+  }
+  .help .inner .subscribe > .inner input[type=email] {
+    width: 55%;
+    margin: 0 2vw 0 0;
+    padding: 2vh 3vw;
+    font-size: 14px;
+  }
+  .help .inner .subscribe > .inner input[type=email]::placeholder {
+    font-size: 13px;
+  }
+  .help .inner .subscribe > .inner input[type=submit] {
+    width: 11vw;
+    font-size: 11px;
+    font-weight: 600;
+  }
+}
+@media screen and (max-width: 539px) {
+  .help {
+    padding: 30px 0 50px;
+  }
+  .help .inner {
+    width: 100%;
+  }
+  .help .inner h1 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    color: #18278c;
+    margin: 40px 20px;
+  }
+  .help .inner h2 {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 20px;
+  }
+  .help .inner p {
+    margin: 0 0 20px;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 13px;
+    color: #333;
+    line-height: 20px;
+  }
+  .help .inner .help-detail {
+    padding: 30px 0;
+  }
+  .help .inner .help-detail .inner .help-txt {
+    width: 80%;
+  }
+  .help .inner .help-detail .inner .help-icon {
+    justify-content: flex-start;
+    width: 90%;
+  }
+  .help .inner .help-detail .inner .help-icon > div {
+    width: 65px;
+    height: 65px;
+  }
+  .help .inner .faq .inner {
+    width: 100%;
+  }
+  .help .inner .faq .inner .faq-table {
+    margin: 0 auto;
+    padding: 2vh 2vw;
+    width: 90%;
+  }
+  .help .inner .faq .inner .faq-table dl dt {
+    padding: 15px 5px;
+    font-size: 12px;
+  }
+  .help .inner .faq .inner .faq-table dl dt::before {
+    padding: 15px 5px;
+    font-size: 20px;
+  }
+  .help .inner .faq .inner .faq-table dl dt > span {
+    top: 19px;
+    left: 35px;
+  }
+  .help .inner .support {
+    width: 100%;
+    padding: 10px 0 90px;
+  }
+  .help .inner .support .inner {
+    width: 100%;
+    padding: 20px;
+    flex-direction: column;
+    align-content: flex-start;
+  }
+  .help .inner .support .inner article {
+    padding: 15px 20px;
+    flex-wrap: wrap;
+  }
+  .help .inner .support .inner article span {
+    margin: 0 0 1vh;
+    font-size: 16px;
+  }
+  .help .inner .support .inner article span:nth-child(1) {
+    width: 5vw;
+  }
+  .help .inner .support .inner article span:nth-child(2) {
+    width: 80%;
+  }
+  .help .inner .subscribe > .inner {
+    padding: 5vh 1vw 5vh 7vw;
+  }
+  .help .inner .subscribe > .inner h2 {
+    width: 80%;
+    margin: 0 0 3vh;
+    font-size: 14px;
+  }
+  .help .inner .subscribe > .inner input[type=email] {
+    width: 70%;
+    font-size: 14px;
+  }
+  .help .inner .subscribe > .inner input[type=email]::placeholder {
+    font-size: 12px;
+  }
+  .help .inner .subscribe > .inner input[type=submit] {
+    width: 13vw;
+    font-size: 10px;
+  }
+}
+body {
+  width: 100%;
+  overflow-x: hidden;
 }
 
 #skipNavi li a {
@@ -2482,19 +2711,13 @@ input, a, button {
   width: 250px;
   height: 140px;
   position: absolute;
-  top: 0;
+  top: 40px;
   left: 80px;
-  background: palegoldenrod;
   background-image: url(../img/image61.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  opacity: 0;
   transition: 1s;
-}
-#header .header-lower > .inner #gnb > li .sub .left .left-img.on {
-  top: 40px;
-  opacity: 1;
 }
 #header .header-lower > .inner #gnb > li .sub .left p {
   position: absolute;
@@ -2547,51 +2770,55 @@ input, a, button {
 }
 #header .header-lower > .inner .btnCall {
   position: absolute;
-  right: 1vw;
-  bottom: 2vh;
+  right: 2vw;
+  bottom: 3vh;
   z-index: 4;
 }
-#header .header-lower > .inner .btnCall .fa-bars {
-  font-size: 28px;
+#header .header-lower > .inner .btnCall .fa-th {
+  font-size: 23px;
   color: #18278c;
   display: none;
 }
-#header .header-lower > .inner .btnCall .fa-bars:hover {
-  color: #08a9cc;
-}
 #header .header-lower > .inner .menuMo {
-  position: fixed;
-  left: -100%;
-  top: 70px;
-  width: 100%;
-  height: 126px;
+  position: absolute;
+  right: -100%;
+  top: 36px;
+  top: 160px;
+  width: 90%;
+  height: 212px;
+  height: 289px;
   background: #fff;
   transition: all 1s;
   display: none;
-  z-index: 3;
 }
 #header .header-lower > .inner .menuMo.on {
-  left: 50%;
-  transform: translateX(-50%);
+  right: 0;
 }
 #header .header-lower > .inner .menuMo #gnbMo {
   display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   flex-wrap: wrap;
+  padding: 2vh 0;
+  box-sizing: border-box;
 }
 #header .header-lower > .inner .menuMo #gnbMo li {
-  width: 50%;
-  padding: 11px;
-  box-sizing: border-box;
   font: bold 12px/"arial";
   color: #888;
   text-align: center;
+  border-bottom: 1px solid #08a9cc;
+}
+#header .header-lower > .inner .menuMo #gnbMo li:last-child {
+  border-bottom: 0;
 }
 #header .header-lower > .inner .menuMo #gnbMo li a {
-  padding: 11px 20px;
+  padding: 1vh 8vw;
   box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 15px;
   font-weight: 600;
-  color: #08a9cc;
-  text-decoration: underline;
+  color: #000;
+  line-height: 50px;
 }
 #header .header-lower > .inner .menuMo #gnbMo li a:hover {
   color: #18278c;
@@ -2623,7 +2850,7 @@ input, a, button {
 #visual {
   width: 100%;
   height: 700px;
-  background-color: #eee;
+  background-color: #f9f9f9;
 }
 
 #brand {
@@ -2722,16 +2949,30 @@ input, a, button {
 }
 
 @media screen and (max-width: 1179px) {
-  #header .header-lower {
-    z-index: 2;
+  #header .header-upper > .inner {
+    width: 100%;
   }
   #header .header-lower > .inner {
     width: 100%;
   }
+  #header .header-lower > .inner h1 {
+    position: absolute;
+    left: 10px;
+  }
+  #header .header-lower > .inner h1 a {
+    display: block;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 33px;
+    font-weight: 500;
+    color: #18278c;
+    letter-spacing: 0.25em;
+  }
   #header .header-lower > .inner #gnb {
     display: none;
   }
-  #header .header-lower > .inner .btnCall .fa-bars {
+  #header .header-lower > .inner .btnCall .fa-th {
     display: block;
   }
   #header .header-lower > .inner .menuMo {

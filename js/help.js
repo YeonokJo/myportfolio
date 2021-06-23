@@ -1,4 +1,4 @@
-var $frame = $('.right');
+var $frame = $('.faq-table');
 var $btns = $frame.find('dt');
 var $boxs = $frame.find('dd');
 var speed = 500;
