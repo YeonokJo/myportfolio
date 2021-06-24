@@ -111,6 +111,10 @@
           border-bottom: 1px solid #cdcdcd;
         }
 
+        textarea {
+          resize: none;
+        }
+
         input[type=submit] {
           display: block;
           position: absolute;

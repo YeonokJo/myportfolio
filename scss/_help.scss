@@ -355,7 +355,6 @@
           width: 100%;
           padding: 20px;
           flex-direction: column;
-          // background: #fff;
 
           article {
             width: 75%;
@@ -365,7 +364,7 @@
   
             span {
               margin: 0;
-              font-size: 17px;
+              font-size: 18px;
 
               &:nth-child(1) {
                 width: 5vw;
@@ -377,7 +376,7 @@
             }
   
             p {
-              font-size: 13px;
+              font-size: 14px;
             }
           }
         }
@@ -516,7 +515,6 @@
           width: 100%;
           padding: 20px;
           flex-direction: column;
-          // background: #fff;
           align-content: flex-start;
 
           article {

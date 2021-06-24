@@ -46,15 +46,11 @@ $gnb_li.each(function (index) {
 });
 
 const btnCall = document.querySelector('.btnCall');
+// const btnOn = btnCall.querySelector('i');
 const menuMo = document.querySelector('.menuMo');
 
-// btnCall.addEventListener('click', e => {
-//   menuMo.classList.toggle('on')
-// })
 btnCall.onclick = function () {
-  // menuMo.style.position = "sticky";
   menuMo.classList.toggle("on");
-
 }
 
 window.onresize = function(e){ 
