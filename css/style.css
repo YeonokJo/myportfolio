@@ -174,7 +174,7 @@ input, a, button {
   position: absolute;
   top: 40px;
   left: 80px;
-  background: palegoldenrod;
+  background: #efefef;
   background-image: url(../img/image61.jpeg);
   background-repeat: no-repeat;
   background-position: center;
@@ -2898,6 +2898,7 @@ body {
   position: absolute;
   top: 40px;
   left: 80px;
+  background: #efefef;
   background-image: url(../img/image61.jpeg);
   background-repeat: no-repeat;
   background-position: center;
@@ -2961,7 +2962,7 @@ body {
   color: #777;
 }
 #header .header-lower > .inner .btnCall:hover {
-  color: #1f618d;
+  color: #333;
 }
 #header .header-lower > .inner .btnCall span {
   padding: 0 1vw 0 0;
@@ -3053,7 +3054,7 @@ body {
   vertical-align: middle;
 }
 #header .header-lower > .inner .util a span:hover {
-  color: #555;
+  color: #333;
 }
 
 #visual {

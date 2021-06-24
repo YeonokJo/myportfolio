@@ -192,6 +192,7 @@ body {
                 // top: 0;
                 top: 40px;
                 left: 80px;
+                background: #efefef;
                 background-image: url(../img/image61.jpeg);
                 background-repeat: no-repeat;
                 background-position: center;
@@ -276,7 +277,7 @@ body {
         color: #777;
 
         &:hover {
-          color: #1f618d;
+          color: #333;
         }
 
         span {
@@ -286,7 +287,7 @@ body {
           font-weight: 500;
           display: none;
         }
-        
+
         .fa-bars {
           font-size: 19px;
           display: none;
@@ -384,7 +385,7 @@ body {
             vertical-align: middle;
          
             &:hover {
-              color: #555;
+              color: #333;
             }
           }
         }         
