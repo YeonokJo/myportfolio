@@ -1925,6 +1925,67 @@ input, a, button {
     border: 1px solid #18278c;
   }
 }
+@media screen and (max-width: 539px) {
+  .department .inner article .left .box {
+    width: 180px;
+    height: 120px;
+    position: absolute;
+    top: 50px;
+    left: 75px;
+  }
+  .department .inner article .left .box2 {
+    width: 110px;
+    height: 85px;
+    top: 105px;
+    left: 185px;
+  }
+  .department .inner article .left h2 {
+    position: absolute;
+    left: 40px;
+  }
+  .department .inner article .right {
+    width: 90%;
+    padding: 20px 10px;
+  }
+  .department .inner article .right p {
+    width: 80%;
+  }
+  .department .inner .division {
+    width: 100%;
+    padding: 20px 0 0;
+  }
+  .department .inner .division .div-tree .depth1 .ceo {
+    width: 50%;
+    height: 40px;
+  }
+  .department .inner .division .div-tree .depth1 .ceo dl {
+    font-size: 13px;
+    line-height: 40px;
+  }
+  .department .inner .division .div-tree .depth2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  .department .inner .division .div-tree .depth2 ul {
+    width: 85%;
+  }
+  .department .inner .division .div-tree .depth2 ul:nth-child(1), .department .inner .division .div-tree .depth2 ul:nth-child(2), .department .inner .division .div-tree .depth2 ul:nth-child(3) {
+    margin: 0 0 4vh;
+  }
+  .department .inner .division .div-tree .depth2 ul:last-child {
+    margin: 0;
+  }
+  .department .inner .division .div-tree .depth2 ul li {
+    display: flex;
+    justify-content: space-around;
+  }
+  .department .inner .division .div-tree .depth2 ul li.manager {
+    font-size: 13px;
+    line-height: 40px;
+  }
+}
 .location .sub-visual {
   background: url(../img/image48.jpeg);
   background-repeat: no-repeat;
@@ -3224,12 +3285,6 @@ body {
   }
   #header .header-lower > .inner .menuMo {
     display: block;
-  }
-  #header .header-lower > .inner .util a {
-    color: #18278c;
-  }
-  #header .header-lower > .inner .util a span {
-    color: #18278c;
   }
 }
 
