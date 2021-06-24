@@ -1961,6 +1961,8 @@ input, a, button {
   .department .inner .division .div-tree .depth1 .ceo dl {
     font-size: 13px;
     line-height: 40px;
+    background: #18278c;
+    color: #fff;
   }
   .department .inner .division .div-tree .depth2 {
     display: flex;
@@ -1984,6 +1986,8 @@ input, a, button {
   .department .inner .division .div-tree .depth2 ul li.manager {
     font-size: 13px;
     line-height: 40px;
+    background: #18278c;
+    color: #fff;
   }
 }
 .location .sub-visual {
