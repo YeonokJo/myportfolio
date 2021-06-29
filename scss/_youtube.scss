@@ -39,46 +39,46 @@
       line-height: 20px;
     }
 
-    .thumbnail {
-      padding: 80px 0;
+    // .thumbnail {
+    //   padding: 80px 0;
 
-      .thumbnail-vid {
-        .inner {
-          display: flex;
-          border: 1px solid teal;
+    //   .thumbnail-vid {
+    //     .inner {
+    //       display: flex;
+    //       border: 1px solid teal;
   
-          figure {
-            flex: 2;
-            padding: 50px;
-            box-sizing: border-box;
-            border: 1px solid orange;
-          }
+    //       figure {
+    //         flex: 2;
+    //         padding: 50px;
+    //         box-sizing: border-box;
+    //         border: 1px solid orange;
+    //       }
   
-          .txt {
-            flex: 1;
-            padding: 30px;
-            box-sizing: border-box;
+    //       .txt {
+    //         flex: 1;
+    //         padding: 30px;
+    //         box-sizing: border-box;
   
-            h2 {
-              margin: 0 0 70px;
-              color: dodgerblue;
-              text-align: left;
-            }
+    //         h2 {
+    //           margin: 0 0 70px;
+    //           color: dodgerblue;
+    //           text-align: left;
+    //         }
   
-            p {
-              padding: 10px 0;
-              box-sizing: border-box;
-              text-align: right;
-              border-bottom: 1px solid dodgerblue;
-            }
+    //         p {
+    //           padding: 10px 0;
+    //           box-sizing: border-box;
+    //           text-align: right;
+    //           border-bottom: 1px solid dodgerblue;
+    //         }
   
-            span {
-              padding: 0 20px;
-            }
-          }
-        }
-      }
-    }
+    //         span {
+    //           padding: 0 20px;
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
 
     #vidGallery {
       width: 100%;
@@ -92,10 +92,9 @@
       article {
         float: left;
         width: 380px;
-        border-bottom: 1px solid #eee;
         box-sizing: border-box;
         margin-right: 20px;
-        padding: 30px 30px 100px;
+        padding: 30px 30px 70px;
         position: relative;
     
         &:nth-child(3n) {

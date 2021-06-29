@@ -256,7 +256,7 @@ input, a, button {
 
 .content {
   width: 100%;
-  padding: 10px 0 100px;
+  padding: 10px 0 60px;
   box-sizing: border-box;
 }
 .content .sub-breadcrumb {
@@ -443,7 +443,7 @@ input, a, button {
   line-height: 20px;
 }
 .community .inner article {
-  padding: 50px 0 120px 330px;
+  padding: 30px 0 70px 330px;
   box-sizing: border-box;
   position: relative;
 }
@@ -455,7 +455,7 @@ input, a, button {
 .community .inner article .event {
   float: left;
   width: 260px;
-  margin: 120px 0 0 20px;
+  margin: 20px 0 0 20px;
   border: 1px solid #cdcdcd;
   position: relative;
   overflow: hidden;
@@ -707,17 +707,20 @@ input, a, button {
 }
 @media screen and (max-width: 539px) {
   .community .inner article {
-    width: 95%;
+    width: 100%;
     padding: 1vh 1vw;
     margin: 0 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-content: flex-end;
+    align-content: center;
     flex-wrap: wrap;
   }
   .community .inner article .event {
-    margin: 0 0 3vh;
+    width: 280px;
+    margin: 0 0 4vh;
+  }
+  .community .inner article .event a .img {
+    width: 300px;
   }
   .community .inner article .event .event-title {
     padding: 1vh 2vw;
@@ -733,6 +736,9 @@ input, a, button {
   }
   .community .inner .sub-menu {
     right: 2vw;
+  }
+  .community .inner .sub-menu li {
+    padding: 10px;
   }
   .community .inner .sub-menu li a {
     font-size: 12px;
@@ -769,38 +775,6 @@ input, a, button {
   color: #333;
   line-height: 20px;
 }
-.youtube .inner .thumbnail {
-  padding: 80px 0;
-}
-.youtube .inner .thumbnail .thumbnail-vid .inner {
-  display: flex;
-  border: 1px solid teal;
-}
-.youtube .inner .thumbnail .thumbnail-vid .inner figure {
-  flex: 2;
-  padding: 50px;
-  box-sizing: border-box;
-  border: 1px solid orange;
-}
-.youtube .inner .thumbnail .thumbnail-vid .inner .txt {
-  flex: 1;
-  padding: 30px;
-  box-sizing: border-box;
-}
-.youtube .inner .thumbnail .thumbnail-vid .inner .txt h2 {
-  margin: 0 0 70px;
-  color: dodgerblue;
-  text-align: left;
-}
-.youtube .inner .thumbnail .thumbnail-vid .inner .txt p {
-  padding: 10px 0;
-  box-sizing: border-box;
-  text-align: right;
-  border-bottom: 1px solid dodgerblue;
-}
-.youtube .inner .thumbnail .thumbnail-vid .inner .txt span {
-  padding: 0 20px;
-}
 .youtube .inner #vidGallery {
   width: 100%;
 }
@@ -812,10 +786,9 @@ input, a, button {
 .youtube .inner #vidGallery article {
   float: left;
   width: 380px;
-  border-bottom: 1px solid #eee;
   box-sizing: border-box;
   margin-right: 20px;
-  padding: 30px 30px 100px;
+  padding: 30px 30px 70px;
   position: relative;
 }
 .youtube .inner #vidGallery article:nth-child(3n) {
@@ -2027,39 +2000,22 @@ input, a, button {
   display: block;
   clear: both;
 }
-.location .inner article .right {
+.location .inner article .info {
   float: right;
   width: 40%;
-  height: 560px;
   padding: 30px;
   box-sizing: border-box;
   position: relative;
 }
-.location .inner article .right .address {
-  position: absolute;
-  top: 50px;
-  right: 30px;
-  text-align: right;
-}
-.location .inner article .right .address .img {
-  width: 380px;
-  height: 180px;
-  margin: 0 0 150px;
-  background-image: url(../img/image56.jpeg);
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: cover;
-}
-.location .inner article .right .address p {
-  padding: 0 0 10px;
-  box-sizing: border-box;
-  font-weight: 600;
+.location .inner article .info h2 {
   color: #18278c;
+}
+.location .inner article .info .address {
+  margin: 4vh 0;
 }
 .location .inner article .left {
   float: left;
   width: 60%;
-  height: 560px;
   padding: 30px;
   box-sizing: border-box;
   position: relative;
@@ -2067,28 +2023,32 @@ input, a, button {
 .location .inner article .left h2 {
   color: #18278c;
 }
-.location .inner article .left h3 {
+.location .inner article .left fieldset {
+  margin-bottom: 50px;
+}
+.location .inner article .left fieldset h3 {
   font-family: "Noto Sans", sans-serif;
   font-size: 14px;
   font-weight: 600;
   color: #000;
   margin: 20px 0;
 }
-.location .inner article .left textarea,
-.location .inner article .left input[type=text],
-.location .inner article .left input[type=email] {
-  width: 80%;
+.location .inner article .left fieldset textarea,
+.location .inner article .left fieldset input[type=text],
+.location .inner article .left fieldset input[type=email] {
+  width: 90%;
   border: none;
   border-bottom: 1px solid #cdcdcd;
 }
-.location .inner article .left textarea {
+.location .inner article .left fieldset textarea {
   resize: none;
+  height: 150px;
 }
 .location .inner article .left input[type=submit] {
   display: block;
   position: absolute;
-  bottom: 70px;
-  right: 160px;
+  bottom: 0;
+  right: 100px;
   width: 150px;
   padding: 10px;
   box-sizing: border-box;
@@ -2119,7 +2079,7 @@ input, a, button {
   height: 500px;
   background: #000;
   margin: 20px;
-  filter: saturate(5%);
+  filter: saturate(45%);
 }
 .location .inner .location #map:hover {
   filter: saturate(100%);

@@ -50,43 +50,10 @@
         clear: both;
       }
 
-      .right {
+      .info {
         float: right;
         width: 40%;
-        height: 560px;
-        padding: 30px;
-        box-sizing: border-box;
-        position: relative;
-
-        .address {
-          position: absolute;
-          top: 50px;
-          right: 30px;
-          text-align: right;
-
-          .img {
-            width: 380px;
-            height: 180px;
-            margin: 0 0 150px;
-            background-image: url(../img/image56.jpeg);
-            background-repeat: no-repeat;
-            background-position: center bottom;
-            background-size: cover;
-          }  
-
-          p {
-            padding: 0 0 10px;
-            box-sizing: border-box;
-            font-weight: 600;
-            color: #18278c;
-          }
-        }
-      }
-
-      .left {
-        float: left;
-        width: 60%;
-        height: 560px;
+        // height: 560px;
         padding: 30px;
         box-sizing: border-box;
         position: relative;
@@ -95,31 +62,57 @@
           color: #18278c;
         }
 
-        h3 {
-          font-family: 'Noto Sans', sans-serif;
-          font-size: 14px;
-          font-weight: 600;
-          color: #000;
-          margin: 20px 0;
+        // p {
+        //   margin: 10px;
+        // }
+
+        .address {
+          margin: 4vh 0;
+        }
+      }
+
+      .left {
+        float: left;
+        width: 60%;
+        // height: 560px;
+        padding: 30px;
+        box-sizing: border-box;
+        position: relative;
+
+        h2 {
+          color: #18278c;
         }
 
-        textarea,
-        input[type=text], 
-        input[type=email] {
-          width: 80%;
-          border: none;
-          border-bottom: 1px solid #cdcdcd;
-        }
+        fieldset {
+          margin-bottom: 50px;
 
-        textarea {
-          resize: none;
+          h3 {
+            font-family: 'Noto Sans', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            color: #000;
+            margin: 20px 0;
+          }
+  
+          textarea,
+          input[type=text], 
+          input[type=email] {
+            width: 90%;
+            border: none;
+            border-bottom: 1px solid #cdcdcd;
+          }
+  
+          textarea {
+            resize: none;
+            height: 150px;
+          }
         }
 
         input[type=submit] {
           display: block;
           position: absolute;
-          bottom: 70px;
-          right: 160px;
+          bottom: 0;
+          right: 100px;
           width: 150px;
           padding: 10px;
           box-sizing: border-box;
@@ -156,7 +149,7 @@
         background: #000; 
         margin: 20px;
         //box-sizing: border-box;
-        filter: saturate(5%);
+        filter: saturate(45%);
 
         &:hover {
           filter: saturate(100%);
