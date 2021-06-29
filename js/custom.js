@@ -45,6 +45,7 @@ $gnb_li.each(function (index) {
   });
 });
 
+
 const btnCall = document.querySelector('.btnCall');
 // const btnOn = btnCall.querySelector('i');
 const menuMo = document.querySelector('.menuMo');

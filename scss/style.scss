@@ -185,35 +185,54 @@ body {
                 letter-spacing: 0.15em;
               }
 
-              .left-img {
-                width: 250px;
-                height: 140px;
-                position: absolute;
-                // top: 0;
-                top: 40px;
-                left: 80px;
-                background: #efefef;
-                background-image: url(../img/image61.jpeg);
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-                // opacity: 0;
-                transition: 1s;
-
-                // &.on {
-                //   top: 40px;
-                //   opacity: 1;
-                // }
-              }
-
-              p {
-                position: absolute;
-                bottom: 50px;
-                left: 80px;
-                font-family: 'Lato', sans-serif;
-                font-size: 14px;
-                font-weight: 500; 
-                color: #333;
+              article {
+                .left-img {
+                  width: 250px;
+                  height: 140px;
+                  position: absolute;
+                  // top: 0;
+                  top: 40px;
+                  left: 80px;
+                  background: #efefef;
+                  // background-image: url(../img/image61.jpeg);
+                  background-repeat: no-repeat;
+                  background-position: center;
+                  background-size: cover;
+                  // opacity: 0;
+                  transition: 1s;
+  
+                  // &.on {
+                  //   top: 40px;
+                  //   opacity: 1;
+                  // }
+                  &.img1 {
+                    background-image: url(../img/image35.jpeg);
+                  }
+                  &.img2 {
+                    background-image: url(../img/image31.jpeg);
+                  }
+                  &.img3 {
+                    background-image: url(../img/image42.jpeg);
+                    background-position: center bottom;
+                  }
+                  &.img4 {
+                    background-image: url(../img/image49.jpeg);
+                    background-position: center bottom;
+                  }
+                  &.img5 {
+                    background-image: url(../img/image41.jpeg);
+                  }
+                }
+  
+                p {
+                  position: absolute;
+                  bottom: 50px;
+                  left: 80px;
+                  font-family: 'Lato', sans-serif;
+                  font-size: 14px;
+                  font-weight: 500; 
+                  color: #333;
+                }
               }
             }
 

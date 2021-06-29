@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
 .department {
-
   .sub-visual {
     background: url(../img/image7.jpeg);
     background-position: center;
@@ -40,7 +39,7 @@
     }
 
     article {
-      margin: 0 0 90px;
+      padding: 50px 0;
       box-sizing: border-box;
 
       &::after {
@@ -104,9 +103,37 @@
       }
     }
 
+    .process {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap;
+      padding: 50px;
+      // background-color: #f7f9f9;
+
+      .process-des {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // flex-wrap: wrap;
+
+        img {
+          width: 45%;
+          margin-bottom: 30px;
+        }
+
+        p {
+          width: 60%;
+          text-align: center;
+        }
+      }
+    }
+
     .division {
       width: 100%;
-      padding: 60px 0;
+      padding: 50px 0;
 
       .div-tree {
         position: relative;
