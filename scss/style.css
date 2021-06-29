@@ -168,20 +168,36 @@ input, a, button {
   color: #000;
   letter-spacing: 0.15em;
 }
-#header .header-lower > .inner #gnb > li .sub .left .left-img {
+#header .header-lower > .inner #gnb > li .sub .left article .left-img {
   width: 250px;
   height: 140px;
   position: absolute;
   top: 40px;
   left: 80px;
   background: #efefef;
-  background-image: url(../img/image61.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   transition: 1s;
 }
-#header .header-lower > .inner #gnb > li .sub .left p {
+#header .header-lower > .inner #gnb > li .sub .left article .left-img.img1 {
+  background-image: url(../img/image35.jpeg);
+}
+#header .header-lower > .inner #gnb > li .sub .left article .left-img.img2 {
+  background-image: url(../img/image31.jpeg);
+}
+#header .header-lower > .inner #gnb > li .sub .left article .left-img.img3 {
+  background-image: url(../img/image42.jpeg);
+  background-position: center bottom;
+}
+#header .header-lower > .inner #gnb > li .sub .left article .left-img.img4 {
+  background-image: url(../img/image49.jpeg);
+  background-position: center bottom;
+}
+#header .header-lower > .inner #gnb > li .sub .left article .left-img.img5 {
+  background-image: url(../img/image41.jpeg);
+}
+#header .header-lower > .inner #gnb > li .sub .left article p {
   position: absolute;
   bottom: 50px;
   left: 80px;
