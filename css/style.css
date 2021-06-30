@@ -378,16 +378,17 @@ input, a, button {
 #footer .inner .wrap .contact span {
   display: block;
   margin-bottom: 10px;
-  font-family: "Lato", sans-serif;
-  font-size: 15px;
-  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
   color: #18288d;
+  letter-spacing: 0.1em;
 }
 #footer .inner .wrap .contact p {
   margin-bottom: 5px;
-  font-family: "Lato", sans-serif;
-  font-size: 14px;
-  color: rgba(24, 40, 141, 0.6);
+  font-family: "Noto Sans", sans-serif;
+  font-size: 12px;
+  color: rgba(24, 40, 141, 0.7);
 }
 #footer .inner .wrap .contact .footer-sns {
   text-align: left;
@@ -410,19 +411,18 @@ input, a, button {
   margin-bottom: 10px;
 }
 #footer .inner .wrap dl dt a {
-  font-family: "Noto Sans", sans-serif;
-  font-size: 15px;
-  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
   color: #18288d;
+  letter-spacing: 0.1em;
 }
 #footer .inner .wrap dl dd {
   margin-bottom: 5px;
 }
 #footer .inner .wrap dl dd a {
-  font-family: "Lato", sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  color: #18288d;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 13px;
   color: rgba(24, 40, 141, 0.7);
 }
 #footer .inner .wrap dl dd a:hover {
@@ -3199,16 +3199,17 @@ body {
 #footer .inner .wrap .contact span {
   display: block;
   margin-bottom: 10px;
-  font-family: "Lato", sans-serif;
-  font-size: 15px;
-  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
   color: #18288d;
+  letter-spacing: 0.1em;
 }
 #footer .inner .wrap .contact p {
   margin-bottom: 5px;
-  font-family: "Lato", sans-serif;
-  font-size: 14px;
-  color: rgba(24, 40, 141, 0.6);
+  font-family: "Noto Sans", sans-serif;
+  font-size: 12px;
+  color: rgba(24, 40, 141, 0.7);
 }
 #footer .inner .wrap .contact .footer-sns {
   text-align: left;
@@ -3231,19 +3232,18 @@ body {
   margin-bottom: 10px;
 }
 #footer .inner .wrap dl dt a {
-  font-family: "Noto Sans", sans-serif;
-  font-size: 15px;
-  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
   color: #18288d;
+  letter-spacing: 0.1em;
 }
 #footer .inner .wrap dl dd {
   margin-bottom: 5px;
 }
 #footer .inner .wrap dl dd a {
-  font-family: "Lato", sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  color: #18288d;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 13px;
   color: rgba(24, 40, 141, 0.7);
 }
 #footer .inner .wrap dl dd a:hover {
