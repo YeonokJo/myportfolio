@@ -2,7 +2,7 @@
 .gallery {
   
   .sub-visual {
-    background: url(../img/image5.jpeg);
+    background: url(../img/image45.jpeg);
     background-position: center ;
     background-size: cover;
   }
@@ -226,7 +226,7 @@
         opacity: 0;
         transform: translateY(200px);
         transition: 1s;
-        background: #f8f9f9;
+        background-color: #f8f9f9;
       
         &.on {
           opacity: 1; 
