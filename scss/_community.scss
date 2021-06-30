@@ -138,15 +138,14 @@
         float: right;
         padding: 10px 20px;
         box-sizing: border-box;
-        // margin-right: 40px;
-        // margin-bottom: 40px;
 
         a {
           font-size: 14px;
-          color: #000;
+          font-weight: 600;
+          color: #18278c;
         
           &:hover {
-            font-weight: bold;
+            font-weight: 700;
           }
         }
       }
@@ -207,12 +206,13 @@
             padding: 4px 10px;
             box-sizing: border-box;
             background-color: #fff;
-            border: 1px solid #777;
+            border: 1px solid #aaa;
             border-radius: 20px;
+            color: #555;
           }
 
-          .black {
-            background-color: #000;
+          .pre {
+            background-color: rgba(24, 40, 141, 0.9);
             color: #fff;
           }
         }   
@@ -223,20 +223,20 @@
           a {
             font-size: 14px;
             color: #777;
-          }
 
-          &:hover a {
-            color: #000;
-          }
+            &:hover {
+              color: #333;
+            }
+          } 
         }
 
         &:nth-child(5) {
           a {
-            font-size: 20px;
-            color: #000;
+            font-size: 18px;
+            color: #777;
 
             &:hover {
-              color: #999;
+              color: #555;
             }
           }
         }
@@ -252,14 +252,14 @@
         display: inline-block;
         width: 30px;
         height: 30px;
-        color: #000;
+        color: #777;
       }
 
       .page-prev {
         display: inline-block;
         width: 30px;
         height: 30px;
-        color: #000;
+        color: #555;
       }
 
       .numbers {
@@ -271,11 +271,11 @@
           height: 30px;
           padding: 10px;
           box-sizing: border-box;
-          color: #777;
+          font-weight: 500;
+          color: #18278c;
 
           &:hover {
-            font-weight: bold;
-            color: #000;
+            font-weight: 700;
           }
         }
       }
@@ -284,14 +284,14 @@
         display: inline-block;
         width: 30px;
         height: 30px;
-        color: #000;
+        color: #555;
       }
 
       .page-end {
         display: inline-block;
         width: 30px;
         height: 30px;
-        color: #000;
+        color: #777;
       }
     }
   }

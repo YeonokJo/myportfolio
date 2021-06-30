@@ -344,86 +344,90 @@ input, a, button {
 
 #footer {
   width: 100%;
-  padding: 40px 0 0;
-  box-sizing: border-box;
-  background-color: #f8f3f2;
+  padding: 50px 20px 70px;
+  background-color: #f3f3f3;
 }
 #footer .inner {
   width: 1180px;
   margin: 0 auto;
 }
-#footer .inner .footer-upper {
-  width: 100%;
-  margin-bottom: 30px;
-  padding: 10px;
-  box-sizing: border-box;
-  text-align: left;
+#footer .inner h2 {
+  margin: 0 0 30px 10px;
 }
-#footer .inner .footer-upper .wrap {
-  width: 100%;
+#footer .inner h2 a {
+  display: block;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  color: #18278c;
+  letter-spacing: 0.25em;
 }
-#footer .inner .footer-upper .wrap::after {
+#footer .inner .wrap {
+  width: 100%;
+  padding: 0 10px;
+}
+#footer .inner .wrap::after {
   content: "";
   display: block;
   clear: both;
 }
-#footer .inner .footer-upper .wrap dl {
+#footer .inner .wrap .contact {
+  width: 40%;
   float: left;
-  width: 25%;
+  text-align: left;
 }
-#footer .inner .footer-upper .wrap dl dt {
+#footer .inner .wrap .contact span {
+  display: block;
   margin-bottom: 10px;
-}
-#footer .inner .footer-upper .wrap dl dt a {
-  font: bold 16px/1 "Josefin Sans";
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
   color: #18288d;
 }
-#footer .inner .footer-upper .wrap dl dd {
+#footer .inner .wrap .contact p {
   margin-bottom: 5px;
-}
-#footer .inner .footer-upper .wrap dl dd a {
-  font: 14px/1 "Lato";
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
   color: rgba(24, 40, 141, 0.6);
 }
-#footer .inner .footer-upper .wrap dl dd a:hover {
+#footer .inner .wrap .contact .footer-sns {
+  text-align: left;
+}
+#footer .inner .wrap .contact .footer-sns a {
+  display: inline-block;
+  padding: 10px 15px 0 0;
+  font-size: 17px;
+  color: rgba(24, 40, 141, 0.8);
+}
+#footer .inner .wrap .contact .footer-sns a:hover {
   color: #18288d;
 }
-#footer .inner .footer-lower {
-  width: 100%;
-  height: 80px;
-  padding: 10px;
-  box-sizing: border-box;
-  position: relative;
-}
-#footer .inner .footer-lower h1 {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-}
-#footer .inner .footer-lower h1 a {
-  font: 28px/1 "Lato";
-  color: #2c0e7c;
-}
-#footer .inner .footer-lower .contact {
-  position: absolute;
-  top: -30px;
-  right: 40px;
+#footer .inner .wrap dl {
+  float: left;
+  width: 20%;
   text-align: right;
 }
-#footer .inner .footer-lower .contact .footer-sns a {
-  display: inline-block;
-  font-size: 22px;
-  color: #999;
+#footer .inner .wrap dl dt {
   margin-bottom: 10px;
-  margin-left: 12px;
 }
-#footer .inner .footer-lower .contact .footer-sns a:hover {
-  color: #18278c;
+#footer .inner .wrap dl dt a {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #18288d;
 }
-#footer .inner .footer-lower .contact p {
-  font-size: 14px;
+#footer .inner .wrap dl dd {
+  margin-bottom: 5px;
+}
+#footer .inner .wrap dl dd a {
   font-family: "Lato", sans-serif;
-  color: #999;
+  font-size: 14px;
+  font-weight: 500;
+  color: #18288d;
+  color: rgba(24, 40, 141, 0.7);
+}
+#footer .inner .wrap dl dd a:hover {
+  color: #18288d;
 }
 
 @media screen and (max-width: 1179px) {
@@ -544,10 +548,11 @@ input, a, button {
 }
 .community .inner .sub-menu li a {
   font-size: 14px;
-  color: #000;
+  font-weight: 600;
+  color: #18278c;
 }
 .community .inner .sub-menu li a:hover {
-  font-weight: bold;
+  font-weight: 700;
 }
 .community .inner table {
   width: 100%;
@@ -595,11 +600,12 @@ input, a, button {
   padding: 4px 10px;
   box-sizing: border-box;
   background-color: #fff;
-  border: 1px solid #777;
+  border: 1px solid #aaa;
   border-radius: 20px;
+  color: #555;
 }
-.community .inner table td:nth-child(2) .black {
-  background-color: #000;
+.community .inner table td:nth-child(2) .pre {
+  background-color: rgba(24, 40, 141, 0.9);
   color: #fff;
 }
 .community .inner table td:nth-child(3) {
@@ -609,15 +615,15 @@ input, a, button {
   font-size: 14px;
   color: #777;
 }
-.community .inner table td:nth-child(3):hover a {
-  color: #000;
+.community .inner table td:nth-child(3) a:hover {
+  color: #333;
 }
 .community .inner table td:nth-child(5) a {
-  font-size: 20px;
-  color: #000;
+  font-size: 18px;
+  color: #777;
 }
 .community .inner table td:nth-child(5) a:hover {
-  color: #999;
+  color: #555;
 }
 .community .inner #pagination {
   width: 100%;
@@ -628,13 +634,13 @@ input, a, button {
   display: inline-block;
   width: 30px;
   height: 30px;
-  color: #000;
+  color: #777;
 }
 .community .inner #pagination .page-prev {
   display: inline-block;
   width: 30px;
   height: 30px;
-  color: #000;
+  color: #555;
 }
 .community .inner #pagination .numbers {
   display: inline-block;
@@ -645,23 +651,23 @@ input, a, button {
   height: 30px;
   padding: 10px;
   box-sizing: border-box;
-  color: #777;
+  font-weight: 500;
+  color: #18278c;
 }
 .community .inner #pagination .numbers a:hover {
-  font-weight: bold;
-  color: #000;
+  font-weight: 700;
 }
 .community .inner #pagination .page-next {
   display: inline-block;
   width: 30px;
   height: 30px;
-  color: #000;
+  color: #555;
 }
 .community .inner #pagination .page-end {
   display: inline-block;
   width: 30px;
   height: 30px;
-  color: #000;
+  color: #777;
 }
 
 @media screen and (max-width: 1179px) {
@@ -2921,7 +2927,7 @@ body {
   box-sizing: border-box;
   font-family: "Josefin Sans", sans-serif;
   font-size: 33px;
-  font-weight: 500;
+  font-weight: 600;
   color: #18278c;
   letter-spacing: 0.25em;
 }
@@ -3212,86 +3218,90 @@ body {
 
 #footer {
   width: 100%;
-  padding: 40px 0 0;
-  box-sizing: border-box;
-  background-color: #f8f3f2;
+  padding: 50px 20px 70px;
+  background-color: #f3f3f3;
 }
 #footer .inner {
   width: 1180px;
   margin: 0 auto;
 }
-#footer .inner .footer-upper {
-  width: 100%;
-  margin-bottom: 30px;
-  padding: 10px;
-  box-sizing: border-box;
-  text-align: left;
+#footer .inner h2 {
+  margin: 0 0 30px 10px;
 }
-#footer .inner .footer-upper .wrap {
-  width: 100%;
+#footer .inner h2 a {
+  display: block;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  color: #18278c;
+  letter-spacing: 0.25em;
 }
-#footer .inner .footer-upper .wrap::after {
+#footer .inner .wrap {
+  width: 100%;
+  padding: 0 10px;
+}
+#footer .inner .wrap::after {
   content: "";
   display: block;
   clear: both;
 }
-#footer .inner .footer-upper .wrap dl {
+#footer .inner .wrap .contact {
+  width: 40%;
   float: left;
-  width: 25%;
+  text-align: left;
 }
-#footer .inner .footer-upper .wrap dl dt {
+#footer .inner .wrap .contact span {
+  display: block;
   margin-bottom: 10px;
-}
-#footer .inner .footer-upper .wrap dl dt a {
-  font: bold 16px/1 "Josefin Sans";
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
   color: #18288d;
 }
-#footer .inner .footer-upper .wrap dl dd {
+#footer .inner .wrap .contact p {
   margin-bottom: 5px;
-}
-#footer .inner .footer-upper .wrap dl dd a {
-  font: 14px/1 "Lato";
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
   color: rgba(24, 40, 141, 0.6);
 }
-#footer .inner .footer-upper .wrap dl dd a:hover {
+#footer .inner .wrap .contact .footer-sns {
+  text-align: left;
+}
+#footer .inner .wrap .contact .footer-sns a {
+  display: inline-block;
+  padding: 10px 15px 0 0;
+  font-size: 17px;
+  color: rgba(24, 40, 141, 0.8);
+}
+#footer .inner .wrap .contact .footer-sns a:hover {
   color: #18288d;
 }
-#footer .inner .footer-lower {
-  width: 100%;
-  height: 80px;
-  padding: 10px;
-  box-sizing: border-box;
-  position: relative;
-}
-#footer .inner .footer-lower h1 {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-}
-#footer .inner .footer-lower h1 a {
-  font: 28px/1 "Lato";
-  color: #2c0e7c;
-}
-#footer .inner .footer-lower .contact {
-  position: absolute;
-  top: -30px;
-  right: 40px;
+#footer .inner .wrap dl {
+  float: left;
+  width: 20%;
   text-align: right;
 }
-#footer .inner .footer-lower .contact .footer-sns a {
-  display: inline-block;
-  font-size: 22px;
-  color: #999;
+#footer .inner .wrap dl dt {
   margin-bottom: 10px;
-  margin-left: 12px;
 }
-#footer .inner .footer-lower .contact .footer-sns a:hover {
-  color: #18278c;
+#footer .inner .wrap dl dt a {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #18288d;
 }
-#footer .inner .footer-lower .contact p {
-  font-size: 14px;
+#footer .inner .wrap dl dd {
+  margin-bottom: 5px;
+}
+#footer .inner .wrap dl dd a {
   font-family: "Lato", sans-serif;
-  color: #999;
+  font-size: 14px;
+  font-weight: 500;
+  color: #18288d;
+  color: rgba(24, 40, 141, 0.7);
+}
+#footer .inner .wrap dl dd a:hover {
+  color: #18288d;
 }
 
 @media screen and (max-width: 1179px) {
