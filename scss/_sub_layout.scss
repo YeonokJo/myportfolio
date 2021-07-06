@@ -379,10 +379,8 @@
 
     .sub-content {
       position: absolute;
-      // top: 50%;
       bottom: 60px;
       left: 50%;
-      // transform: translate(-50%, -50%);
       transform: translateX(-50%);
       text-align: center;
 
@@ -404,7 +402,7 @@
     }
   }
 
-  >.inner {
+  > .inner {
     width: 1180px;
     margin: 0 auto;
     min-height: 500px;
@@ -428,7 +426,7 @@
     width: 1180px;
     margin: 0 auto;
 
-    h2 {
+    > h2 {
       margin: 0 0 30px 10px;
 
       a {
@@ -456,7 +454,7 @@
         float: left;
         text-align: left;
 
-        span {
+        > span {
           display: block;
           margin-bottom: 10px;
           font-family: 'Montserrat', sans-serif;
@@ -466,7 +464,7 @@
           letter-spacing: 0.1em;
         }
 
-        p {
+        > p {
           margin-bottom: 5px;
           font-family: 'Noto Sans', sans-serif;
           font-size: 12px;
@@ -527,6 +525,67 @@
 // tablet
 @media screen and (max-width: 1179px) {
 
+  #header {
+
+    .header-upper {
+      
+      > .inner {
+        width: 100%;
+      }
+    }
+
+    .header-lower {
+      > .inner {
+        width: 100%;
+
+        h1 {
+          position: absolute; 
+          left: 10px;
+          
+          a {
+            display: block;
+            padding: 10px;
+            box-sizing: border-box;
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 33px;
+            font-weight: 500;  
+            color: #18278c;
+            letter-spacing: 0.25em;
+          }
+        }
+
+        #gnb { 
+          display: none;
+        }
+  
+        .btnCall {
+          
+          span {
+            display: inline-block;
+          }
+          .fa-bars {
+            display: inline-block;
+          }
+        }
+  
+        .menuMo {
+          display: block;
+        }
+
+        // .util {
+         
+        //   a {
+        //     color: #18278c;
+
+        //     span {         
+        //       color: #18278c;    
+        //     }
+        //   }         
+        // }
+      }
+    }
+  }
+
   // .sub-breadcrumb {
   //   display: none;
   // }
@@ -535,5 +594,168 @@
       height: 200px;
     }
   }
- 
+
+  #footer {
+
+    .inner {
+      width: 100%;
+
+      .wrap {
+        display: flex;
+        flex-wrap: wrap;
+  
+        .contact {
+          order: 2;
+          width: 100%;
+        }
+  
+        .footer-menu {
+          order: 1;
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          margin-bottom: 30px;
+
+          dl {
+            display: flex;
+            width: 100%;
+
+            dt {
+              margin-right: 20px;
+
+              a {
+                font-size: 13px;
+              } 
+            }
+    
+            dd {
+              margin-right: 13px;
+    
+              a {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// mobile
+@media screen and (max-width: 539px) {
+
+  #header {
+
+    .header-upper {
+      
+      > .inner {
+        width: 100%;
+      }
+    }
+
+    .header-lower {
+      > .inner {
+        width: 100%;
+
+        h1 {
+          position: absolute; 
+          left: 10px;
+          
+          a {
+            display: block;
+            padding: 10px;
+            box-sizing: border-box;
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 33px;
+            font-weight: 500;  
+            color: #18278c;
+            letter-spacing: 0.25em;
+          }
+        }
+
+        #gnb { 
+          display: none;
+        }
+  
+        .btnCall {
+          
+          span {
+            display: none;
+          }
+          .fa-bars {
+            display: inline-block;
+          }
+        }
+  
+        .menuMo {
+          display: block;
+        }
+      }
+    }
+  }
+
+  #footer {
+    padding: 40px 20px;
+
+    .inner {
+
+      > h2 {
+        margin: 0 0 20px 10px;
+  
+        a {
+          font-size: 22px;
+        }
+      }
+
+      .wrap {
+
+        .contact {
+
+          > span {
+            font-size: 12px;
+          }
+  
+          > p {
+            margin-bottom: 5px;
+            font-size: 11px;
+            line-height: 1.5em;
+          }
+
+          .footer-sns {
+
+            a {
+              font-size: 15px;
+            }
+          }
+        }
+  
+        .footer-menu {
+          margin-bottom: 40px;
+
+          dl {
+            flex-wrap: wrap;
+            text-align: left;
+
+            dt {
+              width: 100%;
+              margin-bottom: 3px;
+              margin-top: 10px;
+
+              a {
+                font-size: 12px;
+              } 
+            }
+    
+            dd {
+              
+              a {
+                font-size: 11px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
