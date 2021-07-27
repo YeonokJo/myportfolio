@@ -3039,6 +3039,7 @@ body {
   font-size: 30px;
   background: #f8f8f8;
   display: none;
+  z-index: 2;
 }
 #header .header-lower > .inner #gnb > li .sub::before {
   content: "";
@@ -3263,19 +3264,331 @@ body {
 
 #visual {
   width: 100%;
-  height: 700px;
-  background-color: #f7f7f7;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background: #fff;
+}
+#visual section {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0%;
+}
+#visual section article {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  overflow: hidden;
+}
+#visual section article::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background: pink;
+  transition: 1s cubic-bezier(0.92, -1.46, 0.41, 2.32) 1.4s;
+}
+#visual section article:nth-of-type(1)::before {
+  background: lightgreen;
+}
+#visual section article:nth-of-type(2)::before {
+  background: pink;
+}
+#visual section article:nth-of-type(3)::before {
+  background: lightblue;
+}
+#visual section article:nth-of-type(4)::before {
+  background: orange;
+}
+#visual section article ul {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  transition: 0.5s ease 1.4s;
+  transform-origin: left top;
+}
+#visual section article ul li {
+  position: relative;
+  margin-bottom: 5px;
+  font-size: 0;
+  padding: 5px 40px;
+  display: inline-block;
+  left: -150%;
+}
+#visual section article ul li:nth-of-type(1) {
+  transition: 0.5s ease 0s;
+}
+#visual section article ul li:nth-of-type(1)::before {
+  transition: 0.5s ease 0.6s;
+}
+#visual section article ul li:nth-of-type(2) {
+  transition: 0.5s ease 0.2s;
+}
+#visual section article ul li:nth-of-type(2)::before {
+  transition: 0.5s ease 0.8s;
+}
+#visual section article ul li:nth-of-type(3) {
+  transition: 0.5s ease 0.4s;
+}
+#visual section article ul li:nth-of-type(3)::before {
+  transition: 0.5s ease 1s;
+}
+#visual section article ul li::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  position: absolute;
+  top: 0px;
+  left: -150%;
+}
+#visual section article ul li span {
+  font: bold 9vw/1 "teko";
+  color: #fff;
+  position: relative;
+  top: 10px;
+}
+#visual section article.on::before {
+  width: 86%;
+  height: 80%;
+  top: 10%;
+  left: 7%;
+}
+#visual section article.on ul {
+  transform: scale(0.7);
+}
+#visual section article.on ul li {
+  left: 0%;
+}
+#visual section article.on ul li::before {
+  left: 0%;
+}
+#visual .navi {
+  position: absolute;
+  bottom: 15vh;
+  right: 10vw;
+  z-index: 3;
+}
+#visual .navi li {
+  width: 12px;
+  height: 12px;
+  background: #888;
+  cursor: pointer;
+  float: left;
+  margin-left: 20px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#visual .navi li.on {
+  width: 100px;
+  background: #111;
 }
 
 #brand {
   width: 100%;
-  padding: 100px 0;
+  padding: 70px 0;
 }
 #brand .inner {
   width: 1180px;
   margin: 0 auto;
-  border: 1px solid #000;
-  min-height: 500px;
+  min-height: 400px;
+  padding: 5vh 8vw;
+  box-sizing: border-box;
+}
+#brand .inner::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#brand .inner h1 {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 25px;
+  color: rgba(24, 40, 141, 0.7);
+  float: left;
+  width: 60%;
+}
+#brand .inner .left {
+  width: 48%;
+  height: 30vh;
+  float: left;
+  margin-right: 2%;
+  padding-top: 165px;
+}
+#brand .inner .left::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#brand .inner .left > article {
+  float: left;
+  width: 40%;
+  margin-right: 3vw;
+}
+#brand .inner .left > article h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 17px;
+  color: #999;
+  margin-bottom: 10px;
+}
+#brand .inner .left > article p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 15px;
+  color: #555;
+}
+#brand .inner .right {
+  width: 48%;
+  height: 30vh;
+  float: left;
+  background-color: #999;
+}
+#brand .inner .right .brand-img {
+  background-image: url(../img/image66.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#news {
+  width: 100%;
+  padding: 70px 0;
+}
+#news .inner {
+  width: 1180px;
+  margin: 0 auto;
+  padding: 5vh 8vw;
+  box-sizing: border-box;
+}
+#news .inner .news-img {
+  width: 75%;
+  height: 300px;
+  background: burlywood;
+  margin-bottom: 70px;
+}
+#news .inner .news-des::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#news .inner .news-des > article {
+  float: left;
+  width: 25%;
+  margin-right: 6%;
+}
+#news .inner .news-des > article h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 17px;
+  color: #999;
+  margin-bottom: 10px;
+}
+#news .inner .news-des > article p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 15px;
+  color: #555;
+}
+
+#tech {
+  width: 100%;
+  padding: 70px 0;
+}
+#tech .inner {
+  width: 1180px;
+  margin: 0 auto;
+  padding: 5vh 8vw;
+  box-sizing: border-box;
+}
+#tech .inner::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#tech .inner .tech-img {
+  width: 48%;
+  height: 400px;
+  float: left;
+  position: relative;
+}
+#tech .inner .tech-img .img1 {
+  width: 220px;
+  height: 250px;
+  background: url(../img/image64.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 120px;
+  left: 0;
+}
+#tech .inner .tech-img .img2 {
+  width: 220px;
+  height: 250px;
+  background: url(../img/image65.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 100px;
+}
+#tech .inner .tech-des {
+  width: 48%;
+  float: left;
+  padding-top: 100px;
+}
+#tech .inner .tech-des h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 20px;
+}
+#tech .inner .tech-des p {
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  color: #777;
+  margin-bottom: 50px;
+}
+#tech .inner .tech-des article.icon {
+  float: left;
+  width: 48%;
+}
+#company {
+  width: 100%;
+  padding: 70px 0;
+}
+#company .inner {
+  width: 1180px;
+  margin: 0 auto;
+  padding: 5vh 8vw;
+  box-sizing: border-box;
+}
+#company .inner h2 {
+  width: 35%;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 23px;
+  color: #333;
+  margin-bottom: 40px;
+}
+#company .inner .company-des::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#company .inner .company-des > article {
+  float: left;
+  width: 30%;
+  margin-right: 3%;
+}
+#company .inner .company-des > article p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 15px;
+  color: #555;
 }
 
 #footer {
