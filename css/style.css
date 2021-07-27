@@ -2998,6 +2998,7 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
+  z-index: 3;
 }
 #header .header-lower > .inner #gnb::after {
   content: "";
@@ -3268,6 +3269,7 @@ body {
   overflow: hidden;
   position: relative;
   background: #fff;
+  z-index: 1;
 }
 #visual section {
   width: 100%;
@@ -3296,16 +3298,13 @@ body {
   transition: 1s cubic-bezier(0.92, -1.46, 0.41, 2.32) 1.4s;
 }
 #visual section article:nth-of-type(1)::before {
-  background: lightgreen;
+  background: #f7f7f7;
 }
 #visual section article:nth-of-type(2)::before {
-  background: pink;
+  background: #f7f7f7;
 }
 #visual section article:nth-of-type(3)::before {
-  background: lightblue;
-}
-#visual section article:nth-of-type(4)::before {
-  background: orange;
+  background: #f7f7f7;
 }
 #visual section article ul {
   position: absolute;
@@ -3319,6 +3318,7 @@ body {
   margin-bottom: 5px;
   font-size: 0;
   padding: 5px 40px;
+  padding: 10px 40px;
   display: inline-block;
   left: -150%;
 }
@@ -3346,13 +3346,16 @@ body {
   width: 100%;
   height: 100%;
   background: #111;
+  background: #fff;
   position: absolute;
   top: 0px;
   left: -150%;
 }
 #visual section article ul li span {
   font: bold 9vw/1 "teko";
+  font: bold 6vw/1 "Josefin Sans";
   color: #fff;
+  color: #1f618d;
   position: relative;
   top: 10px;
 }
@@ -3380,7 +3383,8 @@ body {
 #visual .navi li {
   width: 12px;
   height: 12px;
-  background: #888;
+  background: #85929E;
+  border-radius: 50%;
   cursor: pointer;
   float: left;
   margin-left: 20px;
@@ -3388,8 +3392,9 @@ body {
   cursor: pointer;
 }
 #visual .navi li.on {
-  width: 100px;
-  background: #111;
+  width: 70px;
+  background: #34495E;
+  border-radius: 0;
 }
 
 #brand {
